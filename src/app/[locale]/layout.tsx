@@ -106,7 +106,7 @@ export default async function LocaleLayout({
   }
 
   return (
-    <html lang={locale} className={`${inter.variable} h-full antialiased scroll-smooth`} suppressHydrationWarning>
+    <html lang={locale} className={`${inter.variable} h-full antialiased scroll-smooth`} data-scroll-behavior="smooth" suppressHydrationWarning>
       <body className="min-h-full flex flex-col font-sans bg-white text-slate-900">
         <NextIntlClientProvider>
           <Navbar />

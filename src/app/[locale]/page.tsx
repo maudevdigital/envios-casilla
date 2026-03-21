@@ -100,6 +100,7 @@ export default function HomePage() {
           alt="International shipping logistics"
           fill
           priority
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/80 to-slate-900/95" />
@@ -287,6 +288,7 @@ export default function HomePage() {
               src="/quote-cta.webp"
               alt={t("quoteCta.imageAlt")}
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
             />
           </div>

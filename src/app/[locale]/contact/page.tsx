@@ -32,6 +32,7 @@ export default function ContactPage() {
           alt="Contact our team"
           fill
           priority
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-slate-900/75" />

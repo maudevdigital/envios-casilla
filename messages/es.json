@@ -100,7 +100,7 @@
     "imageAlt": "Paquetes en bodega listos para env\u00edo",
     "feat1Value": "30 seg",
     "feat1": "Cotizaci\u00f3n instant\u00e1nea",
-    "feat2Value": "USD/CLP",
+    "feat2Value": "USD/CLP/PYG",
     "feat2": "Cambio en tiempo real",
     "feat3Value": "100%",
     "feat3": "Sin compromiso"
@@ -130,23 +130,23 @@
     "storyCheck2": "Despachos semanales con seguimiento completo",
     "storyCheck3": "Atenci\u00f3n directa por WhatsApp sin intermediarios",
     "timeline": {
-      "title": "Nuestro Proceso",
-      "subtitle": "As\u00ed trabajamos para que tu env\u00edo llegue sin contratiempos",
+      "title": "Nuestros Servicios",
+      "subtitle": "Tres soluciones diseñadas para conectar el mundo con Chile y Paraguay",
       "step1": {
-        "title": "Recepci\u00f3n en Miami",
-        "description": "Tus compras llegan a nuestra bodega en Miami, donde las registramos con fotos y verificamos su estado."
+        "title": "Envíos desde USA",
+        "description": "Recibimos tus compras en nuestra bodega de Miami, consolidamos y enviamos a Chile o Paraguay con seguimiento completo."
       },
       "step2": {
-        "title": "Consolidaci\u00f3n",
-        "description": "Agrupamos tus paquetes en un solo env\u00edo para optimizar costos de transporte internacional."
+        "title": "Importaciones desde China",
+        "description": "Gestionamos la búsqueda de proveedores, control de calidad, transporte y despacho aduanero para tu empresa."
       },
       "step3": {
-        "title": "Env\u00edo Internacional",
-        "description": "Despachamos v\u00eda a\u00e9rea o mar\u00edtima seg\u00fan tu preferencia, con toda la documentaci\u00f3n aduanera gestionada."
+        "title": "Compras Personalizadas",
+        "description": "Compramos por ti en cualquier tienda de USA o China. Sin tarjeta internacional, sin complicaciones."
       },
       "step4": {
-        "title": "Entrega en Destino",
-        "description": "Coordinamos la entrega en tu domicilio en Chile o Paraguay con seguimiento hasta la puerta."
+        "title": "Entrega en tu Puerta",
+        "description": "En los tres servicios gestionamos la aduana y coordinamos la entrega directa a tu domicilio o bodega."
       }
     },
     "values": {
@@ -291,8 +291,8 @@
     "process": {
       "title": "Proceso Paso a Paso",
       "steps": [
-        "Reg\u00edstrate y obt\u00e9n tu direcci\u00f3n en Miami",
-        "Compra en tu tienda favorita de USA y usa nuestra direcci\u00f3n",
+        "Contáctanos y te asignamos una dirección en Miami",
+        "Compra en tu tienda favorita de USA y usa nuestra dirección",
         "Te notificamos cuando llega a la bodega con fotos",
         "Consolidamos tus paquetes para optimizar costos",
         "Realizamos el despacho semanal hacia Chile o Paraguay",
@@ -329,6 +329,72 @@
       "delivery": {
         "title": "Entrega en Destino",
         "description": "Coordinamos la entrega final en tu bodega o punto de distribuci\u00f3n en Chile o Paraguay."
+      }
+    },
+    "comparison": {
+      "title": "Aéreo vs Marítimo",
+      "subtitle": "Elige la modalidad que mejor se adapte a tus necesidades de tiempo y presupuesto",
+      "time": "Tiempo de tránsito",
+      "cost": "Costo",
+      "ideal": "Ideal para",
+      "air": {
+        "title": "Transporte Aéreo",
+        "time": "10 a 15 días hábiles",
+        "cost": "Mayor costo por kg, menor volumen",
+        "ideal": "Pedidos urgentes, muestras, productos de alto valor"
+      },
+      "sea": {
+        "title": "Transporte Marítimo",
+        "time": "35 a 50 días hábiles",
+        "cost": "Menor costo por kg, grandes volúmenes",
+        "ideal": "Pedidos grandes, productos pesados, reposición de inventario"
+      }
+    },
+    "process": {
+      "title": "Proceso de Importación",
+      "subtitle": "Te acompañamos en cada etapa para que tu carga llegue sin contratiempos",
+      "p1": {
+        "title": "Búsqueda de Proveedores",
+        "description": "Identificamos y verificamos los mejores proveedores en China según tu producto y presupuesto."
+      },
+      "p2": {
+        "title": "Negociación y Orden de Compra",
+        "description": "Negociamos precios, condiciones de pago y plazos de producción en tu nombre."
+      },
+      "p3": {
+        "title": "Control de Calidad",
+        "description": "Inspeccionamos la mercancía antes del embarque para garantizar que cumpla con tus estándares."
+      },
+      "p4": {
+        "title": "Embarque Internacional",
+        "description": "Coordinamos el transporte aéreo o marítimo con las mejores navieras y aerolíneas."
+      },
+      "p5": {
+        "title": "Despacho Aduanero",
+        "description": "Gestionamos toda la documentación, permisos y trámites aduaneros en destino."
+      },
+      "p6": {
+        "title": "Entrega Final",
+        "description": "Coordinamos el transporte terrestre hasta tu bodega o punto de distribución."
+      }
+    },
+    "keyFaq": {
+      "title": "Preguntas Clave sobre Importaciones",
+      "faq1": {
+        "question": "¿Cuál es el pedido mínimo para importar?",
+        "answer": "No exigimos un mínimo estricto, pero recomendamos volúmenes que justifiquen el costo del flete internacional. Te asesoramos para encontrar el punto óptimo."
+      },
+      "faq2": {
+        "question": "¿Cómo verifican la calidad del proveedor?",
+        "answer": "Realizamos auditorías previas, solicitamos muestras y coordinamos inspecciones en fábrica antes del embarque para asegurar que el producto cumpla tus expectativas."
+      },
+      "faq3": {
+        "question": "¿Qué documentos necesito para importar?",
+        "answer": "Dependiendo del producto y país de destino, gestionamos facturas comerciales, packing list, certificados de origen y permisos especiales si son requeridos."
+      },
+      "faq4": {
+        "question": "¿Ofrecen financiamiento o facilidades de pago?",
+        "answer": "Trabajamos con esquemas de pago flexibles según el volumen de importación. Contáctanos para evaluar las opciones disponibles para tu caso."
       }
     },
     "industries": {
@@ -392,8 +458,66 @@
         "description": "Compra, env\u00edo, seguro y gesti\u00f3n aduanera en un solo servicio integrado."
       },
       "guarantee": {
-        "title": "Garant\u00eda de Satisfacci\u00f3n",
-        "description": "Si el producto no es lo que esperabas, gestionamos el cambio o devoluci\u00f3n."
+        "title": "Garantía de Satisfacción",
+        "description": "Si el producto no es lo que esperabas, gestionamos el cambio o devolución."
+      }
+    },
+    "process": {
+      "title": "¿Cómo Funciona?",
+      "subtitle": "Un proceso simple en 4 pasos para recibir lo que necesitas",
+      "s1": {
+        "title": "Cuéntanos qué necesitas",
+        "description": "Envíanos el enlace del producto, una foto o una descripción. Nosotros lo buscamos por ti."
+      },
+      "s2": {
+        "title": "Te enviamos la cotización",
+        "description": "Calculamos el costo total incluyendo producto, envío, aduana e impuestos. Sin sorpresas."
+      },
+      "s3": {
+        "title": "Realizamos la compra",
+        "description": "Una vez aprobada la cotización, compramos el producto y te enviamos fotos de verificación."
+      },
+      "s4": {
+        "title": "Recibe en tu domicilio",
+        "description": "Gestionamos el envío internacional y la aduana. Tú solo esperas en casa."
+      }
+    },
+    "stores": {
+      "title": "Compramos en Cualquier Tienda",
+      "subtitle": "Accede a las tiendas más grandes del mundo sin necesidad de tarjeta internacional"
+    },
+    "categories": {
+      "title": "Categorías Populares",
+      "subtitle": "Los productos que más nos solicitan nuestros clientes",
+      "items": [
+        "Electrónica y tecnología",
+        "Ropa y calzado de marca",
+        "Cosméticos y cuidado personal",
+        "Repuestos automotrices",
+        "Juguetes y artículos para niños",
+        "Equipamiento deportivo",
+        "Herramientas y equipos",
+        "Hogar y decoración"
+      ]
+    },
+    "barriers": {
+      "title": "¿Por qué no comprar directo?",
+      "subtitle": "Muchas tiendas internacionales tienen restricciones que te impiden comprar. Nosotros eliminamos esas barreras.",
+      "b1": {
+        "title": "Sin tarjeta internacional",
+        "description": "Muchas tiendas solo aceptan tarjetas emitidas en Estados Unidos o Europa."
+      },
+      "b2": {
+        "title": "No envían a tu país",
+        "description": "La mayoría de tiendas no ofrece despacho a Chile ni Paraguay."
+      },
+      "b3": {
+        "title": "Precios inflados",
+        "description": "Los intermediarios cobran sobreprecios. Nosotros compramos al precio real de la tienda."
+      },
+      "b4": {
+        "title": "Trámites aduaneros",
+        "description": "Importar por cuenta propia implica documentación y trámites complejos."
       }
     }
   }

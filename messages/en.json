@@ -100,7 +100,7 @@
     "imageAlt": "Packages in warehouse ready for shipping",
     "feat1Value": "30 sec",
     "feat1": "Instant quote",
-    "feat2Value": "USD/CLP",
+    "feat2Value": "USD/CLP/PYG",
     "feat2": "Real-time exchange",
     "feat3Value": "100%",
     "feat3": "No commitment"
@@ -130,23 +130,23 @@
     "storyCheck2": "Weekly dispatches with full tracking",
     "storyCheck3": "Direct WhatsApp support without intermediaries",
     "timeline": {
-      "title": "Our Process",
-      "subtitle": "How we work to make sure your shipment arrives without issues",
+      "title": "Our Services",
+      "subtitle": "Three solutions designed to connect the world with Chile and Paraguay",
       "step1": {
-        "title": "Reception in Miami",
-        "description": "Your purchases arrive at our Miami warehouse, where we register them with photos and verify their condition."
+        "title": "USA Shipping",
+        "description": "We receive your purchases at our Miami warehouse, consolidate, and ship to Chile or Paraguay with full tracking."
       },
       "step2": {
-        "title": "Consolidation",
-        "description": "We group your packages into a single shipment to optimize international transport costs."
+        "title": "China Imports",
+        "description": "We manage supplier sourcing, quality control, transport, and customs clearance for your business."
       },
       "step3": {
-        "title": "International Shipping",
-        "description": "We dispatch via air or sea according to your preference, with all customs documentation managed."
+        "title": "Personal Shopping",
+        "description": "We buy for you at any store in the USA or China. No international card needed, no hassle."
       },
       "step4": {
-        "title": "Destination Delivery",
-        "description": "We coordinate delivery to your address in Chile or Paraguay with tracking to your door."
+        "title": "Delivery to Your Door",
+        "description": "Across all three services, we handle customs and coordinate direct delivery to your home or warehouse."
       }
     },
     "values": {
@@ -291,7 +291,7 @@
     "process": {
       "title": "Step by Step Process",
       "steps": [
-        "Sign up and get your Miami address",
+        "Contact us and we assign you a Miami address",
         "Shop at your favorite US store and use our address",
         "We notify you when it arrives at the warehouse with photos",
         "We consolidate your packages to optimize costs",
@@ -329,6 +329,72 @@
       "delivery": {
         "title": "Destination Delivery",
         "description": "We coordinate final delivery to your warehouse or distribution point in Chile or Paraguay."
+      }
+    },
+    "comparison": {
+      "title": "Air vs Sea Freight",
+      "subtitle": "Choose the shipping mode that best fits your timeline and budget",
+      "time": "Transit time",
+      "cost": "Cost",
+      "ideal": "Ideal for",
+      "air": {
+        "title": "Air Freight",
+        "time": "10 to 15 business days",
+        "cost": "Higher cost per kg, lower volume",
+        "ideal": "Urgent orders, samples, high-value products"
+      },
+      "sea": {
+        "title": "Sea Freight",
+        "time": "35 to 50 business days",
+        "cost": "Lower cost per kg, large volumes",
+        "ideal": "Large orders, heavy products, inventory restocking"
+      }
+    },
+    "process": {
+      "title": "Import Process",
+      "subtitle": "We guide you through every stage so your cargo arrives without setbacks",
+      "p1": {
+        "title": "Supplier Sourcing",
+        "description": "We identify and verify the best suppliers in China based on your product and budget."
+      },
+      "p2": {
+        "title": "Negotiation and Purchase Order",
+        "description": "We negotiate prices, payment terms, and production timelines on your behalf."
+      },
+      "p3": {
+        "title": "Quality Control",
+        "description": "We inspect the goods before shipment to ensure they meet your standards."
+      },
+      "p4": {
+        "title": "International Shipping",
+        "description": "We coordinate air or sea transport with the best carriers and shipping lines."
+      },
+      "p5": {
+        "title": "Customs Clearance",
+        "description": "We handle all documentation, permits, and customs procedures at destination."
+      },
+      "p6": {
+        "title": "Final Delivery",
+        "description": "We coordinate ground transport to your warehouse or distribution point."
+      }
+    },
+    "keyFaq": {
+      "title": "Key Import Questions",
+      "faq1": {
+        "question": "What is the minimum order to import?",
+        "answer": "We do not require a strict minimum, but we recommend volumes that justify the international freight cost. We advise you to find the optimal point."
+      },
+      "faq2": {
+        "question": "How do you verify supplier quality?",
+        "answer": "We conduct prior audits, request samples, and coordinate factory inspections before shipment to ensure the product meets your expectations."
+      },
+      "faq3": {
+        "question": "What documents do I need to import?",
+        "answer": "Depending on the product and destination country, we handle commercial invoices, packing lists, certificates of origin, and special permits if required."
+      },
+      "faq4": {
+        "question": "Do you offer financing or payment plans?",
+        "answer": "We work with flexible payment schemes based on import volume. Contact us to evaluate the options available for your case."
       }
     },
     "industries": {
@@ -394,6 +460,64 @@
       "guarantee": {
         "title": "Satisfaction Guarantee",
         "description": "If the product is not what you expected, we manage the exchange or return."
+      }
+    },
+    "process": {
+      "title": "How It Works",
+      "subtitle": "A simple 4-step process to get what you need",
+      "s1": {
+        "title": "Tell us what you need",
+        "description": "Send us the product link, a photo, or a description. We search for it on your behalf."
+      },
+      "s2": {
+        "title": "We send you a quote",
+        "description": "We calculate the total cost including product, shipping, customs, and taxes. No surprises."
+      },
+      "s3": {
+        "title": "We make the purchase",
+        "description": "Once the quote is approved, we buy the product and send you verification photos."
+      },
+      "s4": {
+        "title": "Receive at your door",
+        "description": "We handle international shipping and customs. You just wait at home."
+      }
+    },
+    "stores": {
+      "title": "We Buy from Any Store",
+      "subtitle": "Access the world's largest stores without needing an international card"
+    },
+    "categories": {
+      "title": "Popular Categories",
+      "subtitle": "The products our clients request the most",
+      "items": [
+        "Electronics and technology",
+        "Brand clothing and footwear",
+        "Cosmetics and personal care",
+        "Automotive parts",
+        "Toys and children's items",
+        "Sports equipment",
+        "Tools and equipment",
+        "Home and decor"
+      ]
+    },
+    "barriers": {
+      "title": "Why not buy direct?",
+      "subtitle": "Many international stores have restrictions that prevent you from purchasing. We eliminate those barriers.",
+      "b1": {
+        "title": "No international card",
+        "description": "Many stores only accept cards issued in the United States or Europe."
+      },
+      "b2": {
+        "title": "They do not ship to your country",
+        "description": "Most stores do not offer delivery to Chile or Paraguay."
+      },
+      "b3": {
+        "title": "Inflated prices",
+        "description": "Resellers charge markups. We buy at the actual store price."
+      },
+      "b4": {
+        "title": "Customs paperwork",
+        "description": "Importing on your own involves complex documentation and procedures."
       }
     }
   }

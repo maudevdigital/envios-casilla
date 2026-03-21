@@ -20,6 +20,7 @@ import {
   Plane,
   Ship,
   CheckCircle2,
+  ShoppingCart,
 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import ParallaxSection from "@/components/ParallaxSection";
@@ -43,10 +44,10 @@ export default function AboutPage() {
   ];
 
   const timeline = [
-    { icon: MapPin, ...getTimeline("step1") },
-    { icon: Plane, ...getTimeline("step2") },
-    { icon: Ship, ...getTimeline("step3") },
-    { icon: Globe2, ...getTimeline("step4") },
+    { icon: Plane, ...getTimeline("step1") },
+    { icon: Ship, ...getTimeline("step2") },
+    { icon: ShoppingCart, ...getTimeline("step3") },
+    { icon: MapPin, ...getTimeline("step4") },
   ];
 
   function getTimeline(key: string) {
@@ -65,6 +66,7 @@ export default function AboutPage() {
           alt="Our team and operations"
           fill
           priority
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-slate-900/75" />
@@ -131,6 +133,7 @@ export default function AboutPage() {
                   src="/about.webp"
                   alt="Our warehouse operations"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
