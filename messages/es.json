@@ -1,0 +1,327 @@
+{
+  "whatsapp": {
+    "selectCountry": "Selecciona tu pa\u00eds",
+    "messageChile": "Hola, me contacto desde Chile. Me gustar\u00eda recibir informaci\u00f3n sobre sus servicios de env\u00edo.",
+    "messageParaguay": "Hola, me contacto desde Paraguay. Me gustar\u00eda recibir informaci\u00f3n sobre sus servicios de env\u00edo."
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "usaShipping": "Env\u00edos desde USA",
+    "chinaImports": "Importaciones desde China",
+    "personalShopping": "Compras Personalizadas",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "faq": "Preguntas Frecuentes",
+    "quote": "Cotizar"
+  },
+  "hero": {
+    "title": "Tu puente entre el mundo y Sudam\u00e9rica",
+    "subtitle": "Env\u00edos confiables desde Estados Unidos y China hacia Chile y Paraguay. Servicio r\u00e1pido, seguro y con seguimiento en tiempo real.",
+    "cta": "Solicitar Cotizaci\u00f3n",
+    "ctaSecondary": "Ver Servicios"
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones de env\u00edo adaptadas a tus necesidades, ya sea personal o empresarial",
+    "usa": {
+      "title": "Env\u00edos desde USA",
+      "description": "Compra en cualquier tienda de Estados Unidos y nosotros lo enviamos a Chile o Paraguay. Casilla en Miami con consolidaci\u00f3n de paquetes.",
+      "features": ["Casilla en Miami, FL", "Consolidaci\u00f3n de paquetes", "Env\u00edos semanales", "Seguimiento en tiempo real"]
+    },
+    "china": {
+      "title": "Importaciones desde China",
+      "description": "Servicio especializado para empresas que necesitan importar productos desde China hacia Chile y Paraguay con gesti\u00f3n aduanera incluida.",
+      "features": ["Gesti\u00f3n aduanera completa", "Consolidaci\u00f3n de carga", "Transporte mar\u00edtimo y a\u00e9reo", "Asesoramiento en importaciones"]
+    },
+    "personal": {
+      "title": "Compras Personalizadas",
+      "description": "Te compramos lo que necesites en Estados Unidos o China. Solo ind\u00edcanos el producto y nosotros nos encargamos de todo el proceso.",
+      "features": ["B\u00fasqueda de productos", "Compra en tu nombre", "Verificaci\u00f3n de calidad", "Env\u00edo directo a tu domicilio"]
+    },
+    "learnMore": "Conocer m\u00e1s"
+  },
+  "howItWorks": {
+    "title": "C\u00f3mo Funciona",
+    "subtitle": "Un proceso simple y transparente de inicio a fin",
+    "steps": {
+      "quote": {
+        "title": "Solicita tu Cotizaci\u00f3n",
+        "description": "Cont\u00e1ctanos por WhatsApp o email con los detalles de tu env\u00edo y te entregamos un presupuesto sin compromiso."
+      },
+      "purchase": {
+        "title": "Compra o Env\u00eda",
+        "description": "Realiza tu compra y env\u00eda los productos a nuestra bodega en Miami, o d\u00e9janos gestionar la compra por ti."
+      },
+      "process": {
+        "title": "Procesamos tu Env\u00edo",
+        "description": "Recibimos, verificamos y documentamos tus productos con registro fotogr\u00e1fico. Consolidamos para optimizar costos."
+      },
+      "delivery": {
+        "title": "Recibe en tu Puerta",
+        "description": "Gestionamos el despacho aduanero y entregamos directamente en tu domicilio en Chile o Paraguay."
+      }
+    }
+  },
+  "trust": {
+    "title": "Por qu\u00e9 Elegirnos",
+    "items": {
+      "experience": {
+        "title": "Experiencia Comprobada",
+        "description": "A\u00f1os de trayectoria gestionando env\u00edos internacionales con miles de clientes satisfechos."
+      },
+      "tracking": {
+        "title": "Seguimiento Total",
+        "description": "Conoce el estado de tu paquete en cada etapa del proceso, desde la bodega hasta tu puerta."
+      },
+      "pricing": {
+        "title": "Precios Competitivos",
+        "description": "Tarifas transparentes y sin cargos ocultos. Optimizamos costos consolidando tus paquetes."
+      },
+      "support": {
+        "title": "Soporte Dedicado",
+        "description": "Atenci\u00f3n personalizada por WhatsApp y email. Resolvemos tus dudas en tiempo real."
+      },
+      "customs": {
+        "title": "Gesti\u00f3n Aduanera",
+        "description": "Nos encargamos de toda la documentaci\u00f3n y tr\u00e1mites aduaneros para que t\u00fa no te preocupes."
+      },
+      "photos": {
+        "title": "Registro Fotogr\u00e1fico",
+        "description": "Recibe fotos de tus productos al llegar a nuestra bodega para tu tranquilidad y control."
+      }
+    }
+  },
+  "cta": {
+    "title": "\u00bfListo para enviar?",
+    "subtitle": "Cont\u00e1ctanos hoy y recibe tu cotizaci\u00f3n personalizada sin compromiso",
+    "whatsapp": "Escr\u00edbenos por WhatsApp",
+    "email": "Enviar Email"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "subtitle": "Conectando mercados internacionales con Chile y Paraguay",
+    "mission": {
+      "title": "Nuestra Misi\u00f3n",
+      "description": "Facilitar el acceso a productos internacionales para personas y empresas en Chile y Paraguay, ofreciendo un servicio de env\u00edo confiable, r\u00e1pido y con precios justos. Creemos que las fronteras no deben ser una barrera para acceder a lo que necesitas."
+    },
+    "vision": {
+      "title": "Nuestra Visi\u00f3n",
+      "description": "Ser la empresa l\u00edder en log\u00edstica internacional para Chile y Paraguay, reconocida por nuestra innovaci\u00f3n tecnol\u00f3gica, transparencia y compromiso con la satisfacci\u00f3n del cliente."
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "transparency": "Transparencia en cada paso",
+      "commitment": "Compromiso con el cliente",
+      "innovation": "Innovaci\u00f3n constante",
+      "trust": "Confianza y seguridad"
+    },
+    "stats": {
+      "shipments": "Env\u00edos realizados",
+      "clients": "Clientes satisfechos",
+      "countries": "Pa\u00edses de origen",
+      "years": "A\u00f1os de experiencia"
+    }
+  },
+  "contact": {
+    "title": "Cont\u00e1ctanos",
+    "subtitle": "Estamos listos para ayudarte con tu pr\u00f3ximo env\u00edo",
+    "form": {
+      "name": "Nombre completo",
+      "email": "Correo electr\u00f3nico",
+      "phone": "Tel\u00e9fono",
+      "country": "Pa\u00eds de destino",
+      "chile": "Chile",
+      "paraguay": "Paraguay",
+      "service": "Servicio de inter\u00e9s",
+      "selectService": "Seleccionar servicio",
+      "usaShipping": "Env\u00edos desde USA",
+      "chinaImports": "Importaciones desde China",
+      "personalShopping": "Compras Personalizadas",
+      "message": "Mensaje",
+      "messagePlaceholder": "Describe tu consulta o los detalles de tu env\u00edo...",
+      "send": "Enviar Mensaje",
+      "success": "Mensaje enviado correctamente. Te contactaremos pronto."
+    },
+    "info": {
+      "title": "Informaci\u00f3n de Contacto",
+      "chile": {
+        "title": "Chile",
+        "phone": "+56 9 2842 3774",
+        "email": "contacto@envios-casilla.com"
+      },
+      "paraguay": {
+        "title": "Paraguay",
+        "phone": "+595 992 110 955",
+        "email": "contacto@envios-casilla.com"
+      },
+      "hours": {
+        "title": "Horario de Atenci\u00f3n",
+        "weekdays": "Lunes a Viernes: 9:00 - 18:00",
+        "saturday": "S\u00e1bados: 9:00 - 13:00"
+      },
+      "warehouse": {
+        "title": "Bodega en Miami",
+        "address": "Miami, FL, Estados Unidos"
+      }
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "subtitle": "Resolvemos las dudas m\u00e1s comunes sobre nuestros servicios",
+    "items": {
+      "q1": {
+        "question": "\u00bfC\u00f3mo funciona la casilla en Miami?",
+        "answer": "Te asignamos una direcci\u00f3n en nuestra bodega de Miami. Puedes usar esta direcci\u00f3n para recibir tus compras de cualquier tienda en Estados Unidos. Una vez que llegan, las consolidamos y enviamos a Chile o Paraguay."
+      },
+      "q2": {
+        "question": "\u00bfCu\u00e1nto tiempo demora un env\u00edo desde USA?",
+        "answer": "Los env\u00edos a\u00e9reos desde Miami a Chile o Paraguay toman entre 5 a 10 d\u00edas h\u00e1biles, dependiendo del volumen y la modalidad seleccionada. Realizamos despachos semanales."
+      },
+      "q3": {
+        "question": "\u00bfPuedo rastrear mi paquete?",
+        "answer": "S\u00ed, proporcionamos seguimiento en tiempo real desde que tu paquete llega a nuestra bodega hasta la entrega en tu domicilio. Recibir\u00e1s actualizaciones por WhatsApp o email."
+      },
+      "q4": {
+        "question": "\u00bfQu\u00e9 productos est\u00e1n prohibidos?",
+        "answer": "No se pueden enviar materiales peligrosos, armas, sustancias ilegales, ni productos perecibles. Para la lista completa, cons\u00faltanos directamente o revisa las regulaciones aduaneras del pa\u00eds de destino."
+      },
+      "q5": {
+        "question": "\u00bfC\u00f3mo funcionan las importaciones desde China?",
+        "answer": "Gestionamos todo el proceso: desde la coordinaci\u00f3n con el proveedor chino, consolidaci\u00f3n de carga, transporte mar\u00edtimo o a\u00e9reo, tr\u00e1mites aduaneros y entrega final en Chile o Paraguay."
+      },
+      "q6": {
+        "question": "\u00bfQu\u00e9 incluye el servicio de compras personalizadas?",
+        "answer": "Buscamos el producto que necesitas, verificamos al vendedor, realizamos la compra en tu nombre, inspeccionamos la calidad y lo enviamos directamente a tu domicilio. T\u00fa solo eliges y nosotros hacemos el resto."
+      },
+      "q7": {
+        "question": "\u00bfC\u00f3mo se calculan los costos de env\u00edo?",
+        "answer": "Los costos se calculan en base al peso y dimensiones del paquete. Consolidamos tus compras para reducir el volumen y optimizar el precio. Solicita una cotizaci\u00f3n para obtener un precio exacto."
+      },
+      "q8": {
+        "question": "\u00bfGestionan los tr\u00e1mites aduaneros?",
+        "answer": "S\u00ed, nos encargamos de toda la documentaci\u00f3n y gesti\u00f3n aduanera necesaria para que tus productos ingresen sin problemas a Chile o Paraguay."
+      }
+    }
+  },
+  "footer": {
+    "description": "Servicio de env\u00edos internacionales desde Estados Unidos y China hacia Chile y Paraguay. Confianza, velocidad y transparencia.",
+    "services": "Servicios",
+    "company": "Empresa",
+    "legal": "Legal",
+    "privacy": "Pol\u00edtica de Privacidad",
+    "terms": "T\u00e9rminos y Condiciones",
+    "rights": "Todos los derechos reservados."
+  },
+  "usaPage": {
+    "title": "Env\u00edos desde Estados Unidos",
+    "subtitle": "Tu casilla personal en Miami para compras en todo Estados Unidos",
+    "intro": "Compra en Amazon, eBay, Walmart y cualquier tienda online de Estados Unidos. Nosotros recibimos tus paquetes en nuestra bodega de Miami, los consolidamos y los enviamos a Chile o Paraguay con total seguridad.",
+    "benefits": {
+      "title": "Ventajas de Nuestro Servicio",
+      "address": {
+        "title": "Direcci\u00f3n en Miami",
+        "description": "Recibe una direcci\u00f3n exclusiva en nuestra bodega de Miami para todas tus compras online."
+      },
+      "consolidation": {
+        "title": "Consolidaci\u00f3n Inteligente",
+        "description": "Agrupamos todos tus paquetes en un solo env\u00edo para reducir costos de transporte."
+      },
+      "photos": {
+        "title": "Registro Fotogr\u00e1fico",
+        "description": "Recibe fotos de cada paquete al llegar a la bodega para verificar su contenido y estado."
+      },
+      "weekly": {
+        "title": "Despachos Semanales",
+        "description": "Realizamos env\u00edos consolidados cada semana para garantizar tiempos de entrega consistentes."
+      },
+      "returns": {
+        "title": "Gesti\u00f3n de Devoluciones",
+        "description": "Si un producto no cumple tus expectativas, gestionamos la devoluci\u00f3n dentro de Estados Unidos."
+      },
+      "noLimits": {
+        "title": "Sin L\u00edmites de Peso",
+        "description": "Enviamos paquetes de cualquier tama\u00f1o y peso. Desde documentos hasta electrodom\u00e9sticos grandes."
+      }
+    },
+    "process": {
+      "title": "Proceso Paso a Paso",
+      "steps": [
+        "Reg\u00edstrate y obt\u00e9n tu direcci\u00f3n en Miami",
+        "Compra en tu tienda favorita de USA y usa nuestra direcci\u00f3n",
+        "Te notificamos cuando llega a la bodega con fotos",
+        "Consolidamos tus paquetes para optimizar costos",
+        "Realizamos el despacho semanal hacia Chile o Paraguay",
+        "Recibe en tu domicilio con seguimiento completo"
+      ]
+    }
+  },
+  "chinaPage": {
+    "title": "Importaciones desde China",
+    "subtitle": "Soluci\u00f3n integral para empresas que importan desde Asia",
+    "intro": "Facilitamos todo el proceso de importaci\u00f3n desde China para empresas en Chile y Paraguay. Desde la negociaci\u00f3n con proveedores hasta la entrega en tu bodega, gestionamos cada detalle para que tu negocio crezca sin complicaciones.",
+    "benefits": {
+      "title": "Servicio Completo de Importaci\u00f3n",
+      "sourcing": {
+        "title": "B\u00fasqueda de Proveedores",
+        "description": "Te ayudamos a encontrar los mejores proveedores en China verificados y confiables."
+      },
+      "negotiation": {
+        "title": "Negociaci\u00f3n de Precios",
+        "description": "Negociamos en tu nombre para obtener los mejores precios y condiciones de compra."
+      },
+      "quality": {
+        "title": "Control de Calidad",
+        "description": "Inspeccionamos los productos antes del env\u00edo para garantizar que cumplan tus especificaciones."
+      },
+      "logistics": {
+        "title": "Log\u00edstica Internacional",
+        "description": "Gestionamos el transporte mar\u00edtimo o a\u00e9reo seg\u00fan tus necesidades de tiempo y presupuesto."
+      },
+      "customs": {
+        "title": "Despacho Aduanero",
+        "description": "Toda la documentaci\u00f3n y tr\u00e1mites aduaneros resueltos por nuestro equipo especializado."
+      },
+      "delivery": {
+        "title": "Entrega en Destino",
+        "description": "Coordinamos la entrega final en tu bodega o punto de distribuci\u00f3n en Chile o Paraguay."
+      }
+    },
+    "industries": {
+      "title": "Industrias que Atendemos",
+      "items": ["Retail y Comercio", "Tecnolog\u00eda y Electr\u00f3nica", "Textil y Moda", "Automotriz", "Construcci\u00f3n y Ferreter\u00eda", "Alimentos y Bebidas"]
+    }
+  },
+  "personalPage": {
+    "title": "Compras Personalizadas",
+    "subtitle": "Nosotros compramos por ti en Estados Unidos y China",
+    "intro": "\u00bfNo tienes tarjeta internacional? \u00bfEl vendedor no env\u00eda a tu pa\u00eds? No te preocupes. Nosotros realizamos la compra en tu nombre, verificamos el producto y lo enviamos directamente a tu domicilio en Chile o Paraguay.",
+    "benefits": {
+      "title": "C\u00f3mo te Ayudamos",
+      "noCard": {
+        "title": "Sin Tarjeta Internacional",
+        "description": "No necesitas tarjeta de cr\u00e9dito internacional. Nosotros realizamos la compra por ti."
+      },
+      "anyStore": {
+        "title": "Cualquier Tienda",
+        "description": "Compramos en Amazon, eBay, Best Buy, Alibaba y cualquier tienda online o f\u00edsica."
+      },
+      "verification": {
+        "title": "Verificaci\u00f3n de Producto",
+        "description": "Revisamos cada producto antes del env\u00edo para asegurar que coincida con tu pedido."
+      },
+      "advice": {
+        "title": "Asesoramiento",
+        "description": "Te orientamos sobre las mejores opciones de compra, precios y alternativas disponibles."
+      },
+      "allInOne": {
+        "title": "Todo Incluido",
+        "description": "Compra, env\u00edo, seguro y gesti\u00f3n aduanera en un solo servicio integrado."
+      },
+      "guarantee": {
+        "title": "Garant\u00eda de Satisfacci\u00f3n",
+        "description": "Si el producto no es lo que esperabas, gestionamos el cambio o devoluci\u00f3n."
+      }
+    }
+  }
+}

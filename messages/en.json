@@ -1,0 +1,327 @@
+{
+  "whatsapp": {
+    "selectCountry": "Select your country",
+    "messageChile": "Hello, I am contacting you from Chile. I would like to receive information about your shipping services.",
+    "messageParaguay": "Hello, I am contacting you from Paraguay. I would like to receive information about your shipping services."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "usaShipping": "USA Shipping",
+    "chinaImports": "China Imports",
+    "personalShopping": "Personal Shopping",
+    "about": "About Us",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "quote": "Get Quote"
+  },
+  "hero": {
+    "title": "Your bridge between the world and South America",
+    "subtitle": "Reliable shipping from the United States and China to Chile and Paraguay. Fast, secure service with real-time tracking.",
+    "cta": "Request a Quote",
+    "ctaSecondary": "View Services"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Shipping solutions tailored to your needs, whether personal or business",
+    "usa": {
+      "title": "USA Shipping",
+      "description": "Shop at any store in the United States and we ship it to Chile or Paraguay. Mailbox in Miami with package consolidation.",
+      "features": ["Mailbox in Miami, FL", "Package consolidation", "Weekly shipments", "Real-time tracking"]
+    },
+    "china": {
+      "title": "China Imports",
+      "description": "Specialized service for businesses that need to import products from China to Chile and Paraguay with customs management included.",
+      "features": ["Full customs management", "Cargo consolidation", "Sea and air transport", "Import consulting"]
+    },
+    "personal": {
+      "title": "Personal Shopping",
+      "description": "We buy whatever you need in the United States or China. Just tell us the product and we take care of the entire process.",
+      "features": ["Product sourcing", "Purchase on your behalf", "Quality verification", "Direct delivery to your door"]
+    },
+    "learnMore": "Learn more"
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "A simple and transparent process from start to finish",
+    "steps": {
+      "quote": {
+        "title": "Request Your Quote",
+        "description": "Contact us via WhatsApp or email with your shipment details and receive a no-obligation estimate."
+      },
+      "purchase": {
+        "title": "Purchase or Ship",
+        "description": "Make your purchase and ship products to our Miami warehouse, or let us handle the purchase for you."
+      },
+      "process": {
+        "title": "We Process Your Shipment",
+        "description": "We receive, verify, and document your products with photo records. We consolidate to optimize costs."
+      },
+      "delivery": {
+        "title": "Receive at Your Door",
+        "description": "We handle customs clearance and deliver directly to your address in Chile or Paraguay."
+      }
+    }
+  },
+  "trust": {
+    "title": "Why Choose Us",
+    "items": {
+      "experience": {
+        "title": "Proven Experience",
+        "description": "Years of experience managing international shipments with thousands of satisfied customers."
+      },
+      "tracking": {
+        "title": "Full Tracking",
+        "description": "Know the status of your package at every stage, from the warehouse to your door."
+      },
+      "pricing": {
+        "title": "Competitive Pricing",
+        "description": "Transparent rates with no hidden fees. We optimize costs by consolidating your packages."
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "description": "Personalized attention via WhatsApp and email. We solve your questions in real time."
+      },
+      "customs": {
+        "title": "Customs Management",
+        "description": "We handle all documentation and customs procedures so you do not have to worry."
+      },
+      "photos": {
+        "title": "Photo Documentation",
+        "description": "Receive photos of your products upon arrival at our warehouse for your peace of mind."
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to ship?",
+    "subtitle": "Contact us today and receive your personalized quote with no obligation",
+    "whatsapp": "Message us on WhatsApp",
+    "email": "Send Email"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Connecting international markets with Chile and Paraguay",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To facilitate access to international products for individuals and businesses in Chile and Paraguay, offering reliable, fast, and fairly priced shipping services. We believe borders should not be a barrier to accessing what you need."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading international logistics company for Chile and Paraguay, recognized for our technological innovation, transparency, and commitment to customer satisfaction."
+    },
+    "values": {
+      "title": "Our Values",
+      "transparency": "Transparency at every step",
+      "commitment": "Customer commitment",
+      "innovation": "Constant innovation",
+      "trust": "Trust and security"
+    },
+    "stats": {
+      "shipments": "Shipments completed",
+      "clients": "Satisfied customers",
+      "countries": "Countries of origin",
+      "years": "Years of experience"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are ready to help you with your next shipment",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "phone": "Phone",
+      "country": "Destination country",
+      "chile": "Chile",
+      "paraguay": "Paraguay",
+      "service": "Service of interest",
+      "selectService": "Select a service",
+      "usaShipping": "USA Shipping",
+      "chinaImports": "China Imports",
+      "personalShopping": "Personal Shopping",
+      "message": "Message",
+      "messagePlaceholder": "Describe your inquiry or shipment details...",
+      "send": "Send Message",
+      "success": "Message sent successfully. We will contact you soon."
+    },
+    "info": {
+      "title": "Contact Information",
+      "chile": {
+        "title": "Chile",
+        "phone": "+56 9 2842 3774",
+        "email": "contacto@envios-casilla.com"
+      },
+      "paraguay": {
+        "title": "Paraguay",
+        "phone": "+595 992 110 955",
+        "email": "contacto@envios-casilla.com"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Monday to Friday: 9:00 AM - 6:00 PM",
+        "saturday": "Saturday: 9:00 AM - 1:00 PM"
+      },
+      "warehouse": {
+        "title": "Miami Warehouse",
+        "address": "Miami, FL, United States"
+      }
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to the most common questions about our services",
+    "items": {
+      "q1": {
+        "question": "How does the Miami mailbox work?",
+        "answer": "We assign you an address at our Miami warehouse. You can use this address to receive your purchases from any store in the United States. Once they arrive, we consolidate and ship them to Chile or Paraguay."
+      },
+      "q2": {
+        "question": "How long does shipping from USA take?",
+        "answer": "Air shipments from Miami to Chile or Paraguay take between 5 to 10 business days, depending on volume and selected shipping method. We dispatch weekly."
+      },
+      "q3": {
+        "question": "Can I track my package?",
+        "answer": "Yes, we provide real-time tracking from the moment your package arrives at our warehouse until delivery at your address. You will receive updates via WhatsApp or email."
+      },
+      "q4": {
+        "question": "What products are prohibited?",
+        "answer": "Hazardous materials, weapons, illegal substances, and perishable products cannot be shipped. For the complete list, contact us directly or check the customs regulations of your destination country."
+      },
+      "q5": {
+        "question": "How do imports from China work?",
+        "answer": "We manage the entire process: from coordinating with the Chinese supplier, cargo consolidation, sea or air transport, customs procedures, and final delivery in Chile or Paraguay."
+      },
+      "q6": {
+        "question": "What does the personal shopping service include?",
+        "answer": "We search for the product you need, verify the seller, make the purchase on your behalf, inspect quality, and ship it directly to your address. You just choose and we do the rest."
+      },
+      "q7": {
+        "question": "How are shipping costs calculated?",
+        "answer": "Costs are calculated based on the weight and dimensions of the package. We consolidate your purchases to reduce volume and optimize pricing. Request a quote for an exact price."
+      },
+      "q8": {
+        "question": "Do you handle customs procedures?",
+        "answer": "Yes, we take care of all documentation and customs management needed for your products to enter Chile or Paraguay without issues."
+      }
+    }
+  },
+  "footer": {
+    "description": "International shipping service from the United States and China to Chile and Paraguay. Trust, speed, and transparency.",
+    "services": "Services",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions",
+    "rights": "All rights reserved."
+  },
+  "usaPage": {
+    "title": "Shipping from the United States",
+    "subtitle": "Your personal mailbox in Miami for shopping across the US",
+    "intro": "Shop on Amazon, eBay, Walmart, and any online store in the United States. We receive your packages at our Miami warehouse, consolidate them, and ship them to Chile or Paraguay with complete security.",
+    "benefits": {
+      "title": "Service Advantages",
+      "address": {
+        "title": "Miami Address",
+        "description": "Get an exclusive address at our Miami warehouse for all your online purchases."
+      },
+      "consolidation": {
+        "title": "Smart Consolidation",
+        "description": "We group all your packages into a single shipment to reduce transportation costs."
+      },
+      "photos": {
+        "title": "Photo Documentation",
+        "description": "Receive photos of each package upon arrival at the warehouse to verify contents and condition."
+      },
+      "weekly": {
+        "title": "Weekly Dispatches",
+        "description": "We send consolidated shipments every week to ensure consistent delivery times."
+      },
+      "returns": {
+        "title": "Return Management",
+        "description": "If a product does not meet your expectations, we handle the return within the United States."
+      },
+      "noLimits": {
+        "title": "No Weight Limits",
+        "description": "We ship packages of any size and weight. From documents to large appliances."
+      }
+    },
+    "process": {
+      "title": "Step by Step Process",
+      "steps": [
+        "Sign up and get your Miami address",
+        "Shop at your favorite US store and use our address",
+        "We notify you when it arrives at the warehouse with photos",
+        "We consolidate your packages to optimize costs",
+        "We dispatch weekly shipments to Chile or Paraguay",
+        "Receive at your doorstep with full tracking"
+      ]
+    }
+  },
+  "chinaPage": {
+    "title": "Imports from China",
+    "subtitle": "Comprehensive solution for businesses importing from Asia",
+    "intro": "We facilitate the entire import process from China for businesses in Chile and Paraguay. From supplier negotiation to delivery at your warehouse, we manage every detail so your business grows without complications.",
+    "benefits": {
+      "title": "Complete Import Service",
+      "sourcing": {
+        "title": "Supplier Sourcing",
+        "description": "We help you find the best verified and reliable suppliers in China."
+      },
+      "negotiation": {
+        "title": "Price Negotiation",
+        "description": "We negotiate on your behalf to get the best prices and purchase conditions."
+      },
+      "quality": {
+        "title": "Quality Control",
+        "description": "We inspect products before shipping to ensure they meet your specifications."
+      },
+      "logistics": {
+        "title": "International Logistics",
+        "description": "We manage sea or air transport according to your time and budget needs."
+      },
+      "customs": {
+        "title": "Customs Clearance",
+        "description": "All documentation and customs procedures handled by our specialized team."
+      },
+      "delivery": {
+        "title": "Destination Delivery",
+        "description": "We coordinate final delivery to your warehouse or distribution point in Chile or Paraguay."
+      }
+    },
+    "industries": {
+      "title": "Industries We Serve",
+      "items": ["Retail and Commerce", "Technology and Electronics", "Textile and Fashion", "Automotive", "Construction and Hardware", "Food and Beverages"]
+    }
+  },
+  "personalPage": {
+    "title": "Personal Shopping",
+    "subtitle": "We buy for you in the United States and China",
+    "intro": "Do not have an international credit card? The seller does not ship to your country? Do not worry. We make the purchase on your behalf, verify the product, and ship it directly to your address in Chile or Paraguay.",
+    "benefits": {
+      "title": "How We Help You",
+      "noCard": {
+        "title": "No International Card Needed",
+        "description": "You do not need an international credit card. We make the purchase for you."
+      },
+      "anyStore": {
+        "title": "Any Store",
+        "description": "We buy from Amazon, eBay, Best Buy, Alibaba, and any online or physical store."
+      },
+      "verification": {
+        "title": "Product Verification",
+        "description": "We review each product before shipping to make sure it matches your order."
+      },
+      "advice": {
+        "title": "Expert Advice",
+        "description": "We guide you on the best purchase options, prices, and available alternatives."
+      },
+      "allInOne": {
+        "title": "All Inclusive",
+        "description": "Purchase, shipping, insurance, and customs management in a single integrated service."
+      },
+      "guarantee": {
+        "title": "Satisfaction Guarantee",
+        "description": "If the product is not what you expected, we manage the exchange or return."
+      }
+    }
+  }
+}
