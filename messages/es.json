@@ -92,6 +92,19 @@
       }
     }
   },
+  "quoteCta": {
+    "badge": "Calculadora en l\u00ednea",
+    "title": "Conoce el costo de tu env\u00edo antes de comprar",
+    "description": "Nuestra calculadora te permite estimar en segundos cu\u00e1nto te costar\u00e1 recibir tu compra en Chile o Paraguay, incluyendo transporte, aduana e impuestos con tipo de cambio en tiempo real.",
+    "cta": "Calcular ahora",
+    "imageAlt": "Paquetes en bodega listos para env\u00edo",
+    "feat1Value": "30 seg",
+    "feat1": "Cotizaci\u00f3n instant\u00e1nea",
+    "feat2Value": "USD/CLP",
+    "feat2": "Cambio en tiempo real",
+    "feat3Value": "100%",
+    "feat3": "Sin compromiso"
+  },
   "cta": {
     "title": "\u00bfListo para enviar?",
     "subtitle": "Cont\u00e1ctanos hoy y recibe tu cotizaci\u00f3n personalizada sin compromiso",
@@ -109,12 +122,43 @@
       "title": "Nuestra Visi\u00f3n",
       "description": "Ser la empresa l\u00edder en log\u00edstica internacional para Chile y Paraguay, reconocida por nuestra innovaci\u00f3n tecnol\u00f3gica, transparencia y compromiso con la satisfacci\u00f3n del cliente."
     },
+    "storyLabel": "Nuestra historia",
+    "storyTitle": "Nacimos para acortar distancias entre el mundo y Sudam\u00e9rica",
+    "storyP1": "Comenzamos como un servicio de casilla en Miami para amigos y familiares que necesitaban recibir productos de Estados Unidos en Chile. Con el tiempo, la demanda creci\u00f3 y ampliamos nuestra operaci\u00f3n a Paraguay y a importaciones desde China para empresas.",
+    "storyP2": "Hoy gestionamos miles de env\u00edos al a\u00f1o con un equipo dedicado en Miami, Santiago y Asunci\u00f3n. Nuestro compromiso sigue siendo el mismo: un servicio cercano, transparente y confiable.",
+    "storyCheck1": "Equipo operativo en Miami, Chile y Paraguay",
+    "storyCheck2": "Despachos semanales con seguimiento completo",
+    "storyCheck3": "Atenci\u00f3n directa por WhatsApp sin intermediarios",
+    "timeline": {
+      "title": "Nuestro Proceso",
+      "subtitle": "As\u00ed trabajamos para que tu env\u00edo llegue sin contratiempos",
+      "step1": {
+        "title": "Recepci\u00f3n en Miami",
+        "description": "Tus compras llegan a nuestra bodega en Miami, donde las registramos con fotos y verificamos su estado."
+      },
+      "step2": {
+        "title": "Consolidaci\u00f3n",
+        "description": "Agrupamos tus paquetes en un solo env\u00edo para optimizar costos de transporte internacional."
+      },
+      "step3": {
+        "title": "Env\u00edo Internacional",
+        "description": "Despachamos v\u00eda a\u00e9rea o mar\u00edtima seg\u00fan tu preferencia, con toda la documentaci\u00f3n aduanera gestionada."
+      },
+      "step4": {
+        "title": "Entrega en Destino",
+        "description": "Coordinamos la entrega en tu domicilio en Chile o Paraguay con seguimiento hasta la puerta."
+      }
+    },
     "values": {
       "title": "Nuestros Valores",
-      "transparency": "Transparencia en cada paso",
-      "commitment": "Compromiso con el cliente",
-      "innovation": "Innovaci\u00f3n constante",
-      "trust": "Confianza y seguridad"
+      "transparency": "Transparencia",
+      "transparencyDesc": "Precios claros desde el inicio, sin cargos ocultos ni sorpresas. Sabes exactamente cu\u00e1nto pagas y por qu\u00e9.",
+      "commitment": "Compromiso",
+      "commitmentDesc": "Cada env\u00edo es importante. Tratamos tus paquetes con el mismo cuidado que si fueran nuestros.",
+      "innovation": "Innovaci\u00f3n",
+      "innovationDesc": "Mejoramos continuamente nuestros procesos y tecnolog\u00eda para ofrecerte una experiencia m\u00e1s r\u00e1pida y eficiente.",
+      "trust": "Confianza",
+      "trustDesc": "A\u00f1os de operaci\u00f3n sin interrupciones y miles de clientes satisfechos respaldan nuestro trabajo."
     },
     "stats": {
       "shipments": "Env\u00edos realizados",
@@ -300,8 +344,9 @@
     "shippingMode": "Modalidad de env\u00edo",
     "air": "A\u00e9reo",
     "sea": "Mar\u00edtimo",
-    "productValue": "Valor del producto + despacho a Miami",
-    "productValueHint": "Incluye el valor del producto y el costo de env\u00edo hasta nuestra bodega en Miami",
+    "productValue": "Valor del producto",
+    "shippingToMiami": "Costo de env\u00edo a Miami (opcional)",
+    "shippingToMiamiHint": "Costo del env\u00edo dentro de USA hasta nuestra bodega en Miami. Si a\u00fan no lo sabes, puedes dejarlo en 0.",
     "weight": "Peso",
     "dimensions": "Dimensiones del paquete",
     "height": "Alto",

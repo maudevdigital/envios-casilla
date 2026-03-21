@@ -13,6 +13,7 @@ import {
   RefreshCw,
   Info,
   ArrowRight,
+  Truck,
 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import CTASection from "@/components/CTASection";
@@ -35,6 +36,7 @@ export default function QuotePage() {
   const [country, setCountry] = useState<"chile" | "paraguay">("chile");
   const [shippingMode, setShippingMode] = useState<"air" | "sea">("air");
   const [productValue, setProductValue] = useState("");
+  const [shippingToMiami, setShippingToMiami] = useState("");
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
   const [width, setWidth] = useState("");
@@ -56,6 +58,7 @@ export default function QuotePage() {
 
   const calculate = useCallback(() => {
     const val = parseFloat(productValue) || 0;
+    const domesticShipping = parseFloat(shippingToMiami) || 0;
     let w = parseFloat(weight) || 0;
     const h = parseFloat(height) || 0;
     const wd = parseFloat(width) || 0;
@@ -74,7 +77,7 @@ export default function QuotePage() {
     const ratePerKg = shippingMode === "air" ? RATE_PER_KG_AIR : RATE_PER_KG_SEA;
     const transportUSD = chargeableWeight * ratePerKg;
 
-    const cifValue = val + transportUSD;
+    const cifValue = val + domesticShipping + transportUSD;
 
     let customsDuty: number;
     let iva: number;
@@ -108,7 +111,7 @@ export default function QuotePage() {
       currency,
       localRate: localRate.toFixed(2),
     };
-  }, [productValue, weight, height, width, length, weightUnit, dimUnit, shippingMode, country, rates]);
+  }, [productValue, shippingToMiami, weight, height, width, length, weightUnit, dimUnit, shippingMode, country, rates]);
 
   const result = calculate();
 
@@ -225,7 +228,27 @@ export default function QuotePage() {
                         className="w-full pl-14 pr-4 py-3 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all bg-white"
                       />
                     </div>
-                    <p className="mt-1.5 text-xs text-slate-400">{t("productValueHint")}</p>
+                  </div>
+
+                  {/* Shipping to Miami */}
+                  <div className="mb-6">
+                    <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 mb-2">
+                      <Truck className="w-4 h-4 text-teal-600" />
+                      {t("shippingToMiami")}
+                    </label>
+                    <div className="relative">
+                      <span className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 font-medium">USD</span>
+                      <input
+                        type="number"
+                        min="0"
+                        step="0.01"
+                        value={shippingToMiami}
+                        onChange={(e) => setShippingToMiami(e.target.value)}
+                        placeholder="0.00"
+                        className="w-full pl-14 pr-4 py-3 rounded-xl border border-slate-300 text-slate-900 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all bg-white"
+                      />
+                    </div>
+                    <p className="mt-1.5 text-xs text-slate-400">{t("shippingToMiamiHint")}</p>
                   </div>
 
                   {/* Weight */}
@@ -323,43 +346,43 @@ export default function QuotePage() {
               </AnimatedSection>
             </div>
 
-            {/* Results Panel */}
+            {/* Results Panel - Light theme */}
             <div className="lg:col-span-2">
               <AnimatedSection delay={0.15}>
-                <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 rounded-2xl p-6 sm:p-8 text-white sticky top-28">
-                  <h3 className="text-lg font-bold mb-6 flex items-center gap-2">
-                    <Calculator className="w-5 h-5 text-teal-400" />
+                <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 sticky top-28">
+                  <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
+                    <Calculator className="w-5 h-5 text-teal-600" />
                     {country === "chile" ? t("resultChile") : t("resultParaguay")}
                   </h3>
 
                   <div className="space-y-4">
-                    <div className="flex justify-between items-center py-3 border-b border-slate-700/50">
-                      <span className="text-slate-300 text-sm">{t("transport")}</span>
+                    <div className="flex justify-between items-center py-3 border-b border-slate-200">
+                      <span className="text-slate-500 text-sm">{t("transport")}</span>
                       <div className="text-right">
-                        <div className="font-bold">USD {result.transportUSD}</div>
+                        <div className="font-bold text-slate-900">USD {result.transportUSD}</div>
                         <div className="text-xs text-slate-400">
                           $ {result.transportLocal} {result.currency}
                         </div>
                       </div>
                     </div>
 
-                    <div className="flex justify-between items-center py-3 border-b border-slate-700/50">
-                      <span className="text-slate-300 text-sm">{t("customsTaxes")}</span>
+                    <div className="flex justify-between items-center py-3 border-b border-slate-200">
+                      <span className="text-slate-500 text-sm">{t("customsTaxes")}</span>
                       <div className="text-right">
-                        <div className="font-bold">USD {result.customsUSD}</div>
+                        <div className="font-bold text-slate-900">USD {result.customsUSD}</div>
                         <div className="text-xs text-slate-400">
                           $ {result.customsLocal} {result.currency}
                         </div>
                       </div>
                     </div>
 
-                    <div className="flex justify-between items-center py-4 bg-teal-500/10 rounded-xl px-4 -mx-1">
-                      <span className="font-bold text-teal-300">{t("estimatedTotal")}</span>
+                    <div className="flex justify-between items-center py-4 bg-teal-50 border border-teal-100 rounded-xl px-4 -mx-1">
+                      <span className="font-bold text-teal-700">{t("estimatedTotal")}</span>
                       <div className="text-right">
-                        <div className="text-xl font-extrabold text-white">
+                        <div className="text-xl font-extrabold text-slate-900">
                           USD {result.totalUSD}
                         </div>
-                        <div className="text-sm text-teal-300 font-semibold">
+                        <div className="text-sm text-teal-600 font-semibold">
                           $ {result.totalLocal} {result.currency}
                         </div>
                       </div>
@@ -371,10 +394,10 @@ export default function QuotePage() {
                     {t("exchangeRate")}: 1 USD = ${result.localRate} {result.currency}
                   </div>
 
-                  <div className="mt-6 p-4 bg-white/5 border border-white/10 rounded-xl">
+                  <div className="mt-6 p-4 bg-amber-50 border border-amber-100 rounded-xl">
                     <div className="flex items-start gap-2">
-                      <Info className="w-4 h-4 text-teal-400 flex-shrink-0 mt-0.5" />
-                      <p className="text-xs text-slate-300 leading-relaxed">
+                      <Info className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <p className="text-xs text-amber-800 leading-relaxed">
                         {t("disclaimer")}
                       </p>
                     </div>
@@ -400,7 +423,7 @@ export default function QuotePage() {
                     }
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-6 flex items-center justify-center gap-2 w-full px-6 py-4 bg-green-500 text-white font-semibold rounded-xl hover:bg-green-600 transition-all"
+                    className="mt-6 flex items-center justify-center gap-2 w-full px-6 py-4 bg-green-500 text-white font-semibold rounded-xl hover:bg-green-600 transition-all shadow-sm"
                   >
                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
                       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />

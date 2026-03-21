@@ -92,6 +92,19 @@
       }
     }
   },
+  "quoteCta": {
+    "badge": "Online calculator",
+    "title": "Know your shipping cost before you buy",
+    "description": "Our calculator lets you estimate in seconds how much it will cost to receive your purchase in Chile or Paraguay, including transport, customs and taxes with live exchange rates.",
+    "cta": "Calculate now",
+    "imageAlt": "Packages in warehouse ready for shipping",
+    "feat1Value": "30 sec",
+    "feat1": "Instant quote",
+    "feat2Value": "USD/CLP",
+    "feat2": "Real-time exchange",
+    "feat3Value": "100%",
+    "feat3": "No commitment"
+  },
   "cta": {
     "title": "Ready to ship?",
     "subtitle": "Contact us today and receive your personalized quote with no obligation",
@@ -109,12 +122,43 @@
       "title": "Our Vision",
       "description": "To be the leading international logistics company for Chile and Paraguay, recognized for our technological innovation, transparency, and commitment to customer satisfaction."
     },
+    "storyLabel": "Our story",
+    "storyTitle": "We were born to shorten distances between the world and South America",
+    "storyP1": "We started as a Miami mailbox service for friends and family who needed to receive products from the United States in Chile. Over time, demand grew and we expanded our operation to Paraguay and to imports from China for businesses.",
+    "storyP2": "Today we manage thousands of shipments per year with a dedicated team in Miami, Santiago and Asuncion. Our commitment remains the same: a close, transparent and reliable service.",
+    "storyCheck1": "Operational team in Miami, Chile and Paraguay",
+    "storyCheck2": "Weekly dispatches with full tracking",
+    "storyCheck3": "Direct WhatsApp support without intermediaries",
+    "timeline": {
+      "title": "Our Process",
+      "subtitle": "How we work to make sure your shipment arrives without issues",
+      "step1": {
+        "title": "Reception in Miami",
+        "description": "Your purchases arrive at our Miami warehouse, where we register them with photos and verify their condition."
+      },
+      "step2": {
+        "title": "Consolidation",
+        "description": "We group your packages into a single shipment to optimize international transport costs."
+      },
+      "step3": {
+        "title": "International Shipping",
+        "description": "We dispatch via air or sea according to your preference, with all customs documentation managed."
+      },
+      "step4": {
+        "title": "Destination Delivery",
+        "description": "We coordinate delivery to your address in Chile or Paraguay with tracking to your door."
+      }
+    },
     "values": {
       "title": "Our Values",
-      "transparency": "Transparency at every step",
-      "commitment": "Customer commitment",
-      "innovation": "Constant innovation",
-      "trust": "Trust and security"
+      "transparency": "Transparency",
+      "transparencyDesc": "Clear prices from the start, no hidden fees or surprises. You know exactly what you pay and why.",
+      "commitment": "Commitment",
+      "commitmentDesc": "Every shipment matters. We treat your packages with the same care as if they were our own.",
+      "innovation": "Innovation",
+      "innovationDesc": "We continuously improve our processes and technology to offer you a faster and more efficient experience.",
+      "trust": "Trust",
+      "trustDesc": "Years of uninterrupted operations and thousands of satisfied customers back our work."
     },
     "stats": {
       "shipments": "Shipments completed",
@@ -300,8 +344,9 @@
     "shippingMode": "Shipping mode",
     "air": "Air freight",
     "sea": "Sea freight",
-    "productValue": "Product value + shipping to Miami",
-    "productValueHint": "Include the product value and the shipping cost to our Miami warehouse",
+    "productValue": "Product value",
+    "shippingToMiami": "Shipping cost to Miami (optional)",
+    "shippingToMiamiHint": "Domestic shipping cost within USA to our Miami warehouse. If unknown, you can leave it at 0.",
     "weight": "Weight",
     "dimensions": "Package dimensions",
     "height": "Height",

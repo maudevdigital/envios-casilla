@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import {
   MapPin,
@@ -9,6 +10,8 @@ import {
   CalendarClock,
   RotateCcw,
   Weight,
+  Calculator,
+  ArrowRight,
 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import ParallaxSection from "@/components/ParallaxSection";
@@ -16,6 +19,7 @@ import CTASection from "@/components/CTASection";
 
 export default function USAShippingPage() {
   const t = useTranslations("usaPage");
+  const tQuote = useTranslations("quoteCta");
 
   const benefits = [
     { icon: MapPin, key: "address" },
@@ -120,6 +124,34 @@ export default function USAShippingPage() {
           </div>
         </div>
       </ParallaxSection>
+
+      {/* Quote calculator banner */}
+      <section className="py-16 lg:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="bg-gradient-to-r from-slate-900 to-teal-900 rounded-2xl p-8 sm:p-12 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+              <div className="flex-1">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-teal-500/10 border border-teal-500/20 rounded-full mb-4">
+                  <Calculator className="w-3.5 h-3.5 text-teal-400" />
+                  <span className="text-xs text-teal-300 font-medium">{tQuote("badge")}</span>
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-white">{tQuote("title")}</h3>
+                <p className="mt-3 text-slate-300 max-w-lg">{tQuote("description")}</p>
+              </div>
+              <div className="flex-shrink-0">
+                <Link
+                  href="/quote"
+                  className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-teal-400 hover:to-cyan-400 transition-all shadow-lg shadow-teal-500/25"
+                >
+                  <Calculator className="w-5 h-5" />
+                  {tQuote("cta")}
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
 
       <CTASection />
     </>
