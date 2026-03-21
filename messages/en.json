@@ -18,7 +18,7 @@
   "hero": {
     "title": "Your bridge between the world and South America",
     "subtitle": "Reliable shipping from the United States and China to Chile and Paraguay. Fast, secure service with real-time tracking.",
-    "cta": "Request a Quote",
+    "cta": "Calculate Your Shipment",
     "ctaSecondary": "View Services"
   },
   "services": {
@@ -291,6 +291,34 @@
       "title": "Industries We Serve",
       "items": ["Retail and Commerce", "Technology and Electronics", "Textile and Fashion", "Automotive", "Construction and Hardware", "Food and Beverages"]
     }
+  },
+  "quote": {
+    "badge": "Shipping calculator",
+    "title": "Get Your Quote",
+    "subtitle": "Calculate the estimated cost of your shipment in real time with live exchange rates",
+    "destination": "Destination country",
+    "shippingMode": "Shipping mode",
+    "air": "Air freight",
+    "sea": "Sea freight",
+    "productValue": "Product value + shipping to Miami",
+    "productValueHint": "Include the product value and the shipping cost to our Miami warehouse",
+    "weight": "Weight",
+    "dimensions": "Package dimensions",
+    "height": "Height",
+    "widthLabel": "Width",
+    "lengthLabel": "Length",
+    "unit": "Unit",
+    "volWeight": "Volumetric weight",
+    "chargeableWeight": "Chargeable weight",
+    "resultChile": "Total delivered to Chile",
+    "resultParaguay": "Total delivered to Paraguay",
+    "transport": "Transport",
+    "customsTaxes": "Customs and taxes",
+    "estimatedTotal": "Estimated total",
+    "exchangeRate": "Exchange rate",
+    "disclaimer": "Values are approximate and may vary based on actual package dimensions. The chargeable weight is always the greater between actual weight and volumetric weight. For a final quote, contact us via WhatsApp.",
+    "requestFinal": "Request final quote",
+    "whatsappQuote": "Hello, I just used the calculator. My estimated shipment is USD {total}, chargeable weight {weight} kg, {mode} mode. I would like to confirm the final price."
   },
   "personalPage": {
     "title": "Personal Shopping",

@@ -117,7 +117,7 @@ export default function Navbar() {
             </div>
 
             <Link
-              href="/contact"
+              href="/quote"
               className="px-5 py-2.5 bg-gradient-to-r from-teal-500 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:from-teal-600 hover:to-cyan-700 transition-all shadow-sm"
             >
               {t("quote")}
@@ -194,7 +194,7 @@ export default function Navbar() {
 
               <div className="pt-3 px-4">
                 <Link
-                  href="/contact"
+                  href="/quote"
                   onClick={() => setMobileOpen(false)}
                   className="block text-center px-5 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white text-sm font-semibold rounded-lg"
                 >

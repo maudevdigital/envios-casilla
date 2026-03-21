@@ -18,7 +18,7 @@
   "hero": {
     "title": "Tu puente entre el mundo y Sudam\u00e9rica",
     "subtitle": "Env\u00edos confiables desde Estados Unidos y China hacia Chile y Paraguay. Servicio r\u00e1pido, seguro y con seguimiento en tiempo real.",
-    "cta": "Solicitar Cotizaci\u00f3n",
+    "cta": "Cotiza tu Env\u00edo",
     "ctaSecondary": "Ver Servicios"
   },
   "services": {
@@ -291,6 +291,34 @@
       "title": "Industrias que Atendemos",
       "items": ["Retail y Comercio", "Tecnolog\u00eda y Electr\u00f3nica", "Textil y Moda", "Automotriz", "Construcci\u00f3n y Ferreter\u00eda", "Alimentos y Bebidas"]
     }
+  },
+  "quote": {
+    "badge": "Calculadora de env\u00edos",
+    "title": "Cotiza tu Env\u00edo",
+    "subtitle": "Calcula el costo estimado de tu env\u00edo en tiempo real con tipo de cambio actualizado",
+    "destination": "Pa\u00eds de destino",
+    "shippingMode": "Modalidad de env\u00edo",
+    "air": "A\u00e9reo",
+    "sea": "Mar\u00edtimo",
+    "productValue": "Valor del producto + despacho a Miami",
+    "productValueHint": "Incluye el valor del producto y el costo de env\u00edo hasta nuestra bodega en Miami",
+    "weight": "Peso",
+    "dimensions": "Dimensiones del paquete",
+    "height": "Alto",
+    "widthLabel": "Ancho",
+    "lengthLabel": "Largo",
+    "unit": "Unidad",
+    "volWeight": "Peso volum\u00e9trico",
+    "chargeableWeight": "Peso cobrable",
+    "resultChile": "Total puesto en Chile",
+    "resultParaguay": "Total puesto en Paraguay",
+    "transport": "Transporte",
+    "customsTaxes": "Aduana e impuestos",
+    "estimatedTotal": "Total estimado",
+    "exchangeRate": "Tipo de cambio",
+    "disclaimer": "Los valores son aproximados y pueden variar seg\u00fan las dimensiones reales del paquete. El peso cobrable ser\u00e1 siempre el mayor entre el peso real y el peso volum\u00e9trico. Para un presupuesto definitivo, cont\u00e1ctanos por WhatsApp.",
+    "requestFinal": "Solicitar cotizaci\u00f3n final",
+    "whatsappQuote": "Hola, acabo de usar el cotizador. Mi env\u00edo estimado es de USD {total}, peso cobrable {weight} kg, modalidad {mode}. Me gustar\u00eda confirmar el precio final."
   },
   "personalPage": {
     "title": "Compras Personalizadas",
