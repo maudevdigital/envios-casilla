@@ -39,14 +39,14 @@ export default function QuotePage() {
   const [length, setLength] = useState("");
   const [weightUnit, setWeightUnit] = useState<"kg" | "lb">("kg");
   const [dimUnit, setDimUnit] = useState<"cm" | "in">("cm");
-  const [rates, setRates] = useState<ExchangeRates>({ CLP: 950, PYG: 7700 });
+  const [rates, setRates] = useState<ExchangeRates>({ CLP: 950, PYG: 7995 });
   const [loadingRate, setLoadingRate] = useState(true);
 
   useEffect(() => {
     fetch("/api/exchange-rate")
       .then((r) => r.json())
       .then((data) => {
-        setRates({ CLP: data.CLP || 950, PYG: data.PYG || 7700 });
+        setRates({ CLP: data.CLP || 950, PYG: data.PYG || 7995 });
         setLoadingRate(false);
       })
       .catch(() => setLoadingRate(false));
