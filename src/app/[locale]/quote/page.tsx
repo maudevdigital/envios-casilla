@@ -39,7 +39,7 @@ export default function QuotePage() {
   const [length, setLength] = useState("");
   const [weightUnit, setWeightUnit] = useState<"kg" | "lb">("kg");
   const [dimUnit, setDimUnit] = useState<"cm" | "in">("cm");
-  const [rates, setRates] = useState<ExchangeRates>({ CLP: 950, PYG: 7995 });
+  const [rates, setRates] = useState<ExchangeRates>({ CLP: 950, PYG: 6663 });
   const [loadingRate, setLoadingRate] = useState(true);
 
   useEffect(() => {

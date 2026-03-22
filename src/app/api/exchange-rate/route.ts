@@ -51,5 +51,5 @@ export async function GET() {
     }
   }
 
-  return NextResponse.json({ CLP: 950, PYG: 7995 });
+  return NextResponse.json({ CLP: 950, PYG: 6663 });
 }
