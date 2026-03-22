@@ -6,7 +6,7 @@ import {
   Search,
   HandCoins,
   ShieldCheck,
-  Ship,
+  MessageSquare,
   FileCheck,
   MapPin,
   Factory,
@@ -21,6 +21,7 @@ import {
 import AnimatedSection from "@/components/AnimatedSection";
 import ParallaxSection from "@/components/ParallaxSection";
 import CTASection from "@/components/CTASection";
+import PartnersStrip from "@/components/PartnersStrip";
 
 export default function ChinaImportsPage() {
   const t = useTranslations("chinaPage");
@@ -29,7 +30,7 @@ export default function ChinaImportsPage() {
     { icon: Search, key: "sourcing" },
     { icon: HandCoins, key: "negotiation" },
     { icon: ShieldCheck, key: "quality" },
-    { icon: Ship, key: "logistics" },
+    { icon: Plane, key: "logistics" },
     { icon: FileCheck, key: "customs" },
     { icon: MapPin, key: "delivery" },
   ];
@@ -47,7 +48,7 @@ export default function ChinaImportsPage() {
     { icon: Search, key: "p1" },
     { icon: ClipboardCheck, key: "p2" },
     { icon: ShieldCheck, key: "p3" },
-    { icon: Ship, key: "p4" },
+    { icon: Plane, key: "p4" },
     { icon: FileCheck, key: "p5" },
     { icon: Truck, key: "p6" },
   ];
@@ -100,7 +101,7 @@ export default function ChinaImportsPage() {
               return (
                 <AnimatedSection key={item.key} delay={index * 0.08}>
                   <div className="bg-slate-50 rounded-2xl p-7 border border-slate-200 hover:border-teal-200 hover:shadow-md transition-all duration-300 h-full">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500/10 to-cyan-500/10 flex items-center justify-center mb-5">
+                    <div className="w-12 h-12 rounded-xl bg-linear-to-br from-teal-500/10 to-cyan-500/10 flex items-center justify-center mb-5">
                       <Icon className="w-6 h-6 text-teal-600" />
                     </div>
                     <h3 className="text-base font-bold text-slate-800 mb-2">
@@ -117,7 +118,7 @@ export default function ChinaImportsPage() {
         </div>
       </section>
 
-      {/* Air vs Sea comparison */}
+      {/* Shipping info */}
       <section className="py-20 lg:py-28 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="text-center mb-12">
@@ -129,27 +130,27 @@ export default function ChinaImportsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {/* Air */}
               <div className="bg-white rounded-2xl border border-slate-200 p-8 hover:border-teal-200 hover:shadow-md transition-all">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6">
+                <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6">
                   <Plane className="w-7 h-7 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-4">{t("comparison.air.title")}</h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <Clock className="w-5 h-5 text-teal-600 flex-shrink-0" />
+                    <Clock className="w-5 h-5 text-teal-600 shrink-0" />
                     <div>
                       <div className="text-sm font-semibold text-slate-700">{t("comparison.time")}</div>
                       <div className="text-sm text-slate-500">{t("comparison.air.time")}</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <DollarSign className="w-5 h-5 text-teal-600 flex-shrink-0" />
+                    <DollarSign className="w-5 h-5 text-teal-600 shrink-0" />
                     <div>
                       <div className="text-sm font-semibold text-slate-700">{t("comparison.cost")}</div>
                       <div className="text-sm text-slate-500">{t("comparison.air.cost")}</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Package className="w-5 h-5 text-teal-600 flex-shrink-0" />
+                    <Package className="w-5 h-5 text-teal-600 shrink-0" />
                     <div>
                       <div className="text-sm font-semibold text-slate-700">{t("comparison.ideal")}</div>
                       <div className="text-sm text-slate-500">{t("comparison.air.ideal")}</div>
@@ -158,35 +159,21 @@ export default function ChinaImportsPage() {
                 </div>
               </div>
 
-              {/* Sea */}
-              <div className="bg-white rounded-2xl border border-slate-200 p-8 hover:border-teal-200 hover:shadow-md transition-all">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6">
-                  <Ship className="w-7 h-7 text-white" />
+              {/* Maritime quote CTA */}
+              <div className="bg-linear-to-br from-slate-800 to-slate-900 rounded-2xl p-8 text-white flex flex-col justify-between">
+                <div>
+                  <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mb-6">
+                    <MessageSquare className="w-7 h-7 text-teal-400" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{t("comparison.maritime.title")}</h3>
+                  <p className="text-slate-300 text-sm leading-relaxed">{t("comparison.maritime.description")}</p>
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">{t("comparison.sea.title")}</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Clock className="w-5 h-5 text-teal-600 flex-shrink-0" />
-                    <div>
-                      <div className="text-sm font-semibold text-slate-700">{t("comparison.time")}</div>
-                      <div className="text-sm text-slate-500">{t("comparison.sea.time")}</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <DollarSign className="w-5 h-5 text-teal-600 flex-shrink-0" />
-                    <div>
-                      <div className="text-sm font-semibold text-slate-700">{t("comparison.cost")}</div>
-                      <div className="text-sm text-slate-500">{t("comparison.sea.cost")}</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Package className="w-5 h-5 text-teal-600 flex-shrink-0" />
-                    <div>
-                      <div className="text-sm font-semibold text-slate-700">{t("comparison.ideal")}</div>
-                      <div className="text-sm text-slate-500">{t("comparison.sea.ideal")}</div>
-                    </div>
-                  </div>
-                </div>
+                <a
+                  href="/contact"
+                  className="mt-6 inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-teal-500 text-white font-semibold rounded-xl hover:bg-teal-600 transition-all text-sm"
+                >
+                  {t("comparison.maritime.cta")}
+                </a>
               </div>
             </div>
           </AnimatedSection>
@@ -207,7 +194,7 @@ export default function ChinaImportsPage() {
               return (
                 <AnimatedSection key={step.key} delay={index * 0.1}>
                   <div className="flex items-start gap-5 mb-8 last:mb-0">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center text-white font-bold shadow-lg shadow-teal-500/20">
+                    <div className="shrink-0 w-12 h-12 rounded-xl bg-linear-to-br from-teal-500 to-cyan-600 flex items-center justify-center text-white font-bold shadow-lg shadow-teal-500/20">
                       <Icon className="w-6 h-6" />
                     </div>
                     <div className="pt-1 flex-1">
@@ -240,7 +227,7 @@ export default function ChinaImportsPage() {
             {industries.map((industry, index) => (
               <AnimatedSection key={index} delay={index * 0.08}>
                 <div className="flex items-center gap-3 bg-white rounded-xl p-5 border border-slate-200 hover:border-teal-200 transition-all">
-                  <Factory className="w-5 h-5 text-teal-600 flex-shrink-0" />
+                  <Factory className="w-5 h-5 text-teal-600 shrink-0" />
                   <span className="text-sm font-medium text-slate-700">{industry}</span>
                 </div>
               </AnimatedSection>
@@ -261,7 +248,7 @@ export default function ChinaImportsPage() {
               <AnimatedSection key={key} delay={index * 0.08}>
                 <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 h-full">
                   <div className="flex items-start gap-3">
-                    <HelpCircle className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
+                    <HelpCircle className="w-5 h-5 text-teal-600 shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-bold text-slate-800 mb-2">{t(`keyFaq.${key}.question`)}</h3>
                       <p className="text-sm text-slate-500 leading-relaxed">{t(`keyFaq.${key}.answer`)}</p>
@@ -273,6 +260,8 @@ export default function ChinaImportsPage() {
           </div>
         </div>
       </section>
+
+      <PartnersStrip />
 
       <CTASection />
     </>

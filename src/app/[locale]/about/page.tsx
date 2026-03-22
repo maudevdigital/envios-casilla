@@ -24,7 +24,6 @@ import {
 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import ParallaxSection from "@/components/ParallaxSection";
-import CTASection from "@/components/CTASection";
 
 export default function AboutPage() {
   const t = useTranslations("about");
@@ -32,7 +31,7 @@ export default function AboutPage() {
   const stats = [
     { icon: Package, value: "5,000+", label: t("stats.shipments") },
     { icon: Users, value: "2,000+", label: t("stats.clients") },
-    { icon: Globe2, value: "3", label: t("stats.countries") },
+    { icon: Globe2, value: "2", label: t("stats.countries") },
     { icon: CalendarDays, value: "5+", label: t("stats.years") },
   ];
 
@@ -120,7 +119,7 @@ export default function AboutPage() {
               <div className="mt-8 space-y-3">
                 {[t("storyCheck1"), t("storyCheck2"), t("storyCheck3")].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-teal-500 flex-shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-teal-500 shrink-0" />
                     <span className="text-sm font-medium text-slate-700">{item}</span>
                   </div>
                 ))}
@@ -128,7 +127,7 @@ export default function AboutPage() {
             </AnimatedSection>
 
             <AnimatedSection delay={0.15}>
-              <div className="relative rounded-2xl overflow-hidden h-80 lg:h-[450px]">
+              <div className="relative rounded-2xl overflow-hidden h-80 lg:h-112.5">
                 <Image
                   src="/about.webp"
                   alt="Our warehouse operations"
@@ -148,7 +147,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <AnimatedSection>
               <div className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-10 h-full">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6">
+                <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6">
                   <Target className="w-7 h-7 text-white" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">{t("mission.title")}</h2>
@@ -158,7 +157,7 @@ export default function AboutPage() {
 
             <AnimatedSection delay={0.15}>
               <div className="bg-white rounded-2xl border border-slate-200 p-8 lg:p-10 h-full">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6">
+                <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6">
                   <Eye className="w-7 h-7 text-white" />
                 </div>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">{t("vision.title")}</h2>
@@ -183,11 +182,11 @@ export default function AboutPage() {
               return (
                 <AnimatedSection key={index} delay={index * 0.1}>
                   <div className="relative text-center">
-                    <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6 shadow-lg shadow-teal-500/20">
+                    <div className="w-16 h-16 mx-auto rounded-2xl bg-linear-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6 shadow-lg shadow-teal-500/20">
                       <Icon className="w-8 h-8 text-white" />
                     </div>
                     {index < timeline.length - 1 && (
-                      <div className="hidden lg:block absolute top-8 left-[60%] w-[calc(100%-20%)] h-px bg-gradient-to-r from-teal-300 to-transparent" />
+                      <div className="hidden lg:block absolute top-8 left-[60%] w-[calc(100%-20%)] h-px bg-linear-to-r from-teal-300 to-transparent" />
                     )}
                     <div className="text-xs font-bold text-teal-600 mb-2">0{index + 1}</div>
                     <h3 className="text-lg font-bold text-slate-800 mb-2">{step.title}</h3>
@@ -213,7 +212,7 @@ export default function AboutPage() {
               return (
                 <AnimatedSection key={index} delay={index * 0.1}>
                   <div className="bg-white rounded-2xl p-7 border border-slate-200 hover:border-teal-200 hover:shadow-md transition-all h-full">
-                    <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500/10 to-cyan-500/10 flex items-center justify-center mb-4">
+                    <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-teal-500/10 to-cyan-500/10 flex items-center justify-center mb-4">
                       <Icon className="w-7 h-7 text-teal-600" />
                     </div>
                     <h3 className="font-bold text-slate-800 mb-2">{value.label}</h3>
@@ -226,7 +225,6 @@ export default function AboutPage() {
         </div>
       </ParallaxSection>
 
-      <CTASection />
     </>
   );
 }

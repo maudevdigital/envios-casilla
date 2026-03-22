@@ -32,7 +32,7 @@
     "china": {
       "title": "Importaciones desde China",
       "description": "Servicio especializado para empresas que necesitan importar productos desde China hacia Chile y Paraguay con gesti\u00f3n aduanera incluida.",
-      "features": ["Gesti\u00f3n aduanera completa", "Consolidaci\u00f3n de carga", "Transporte mar\u00edtimo y a\u00e9reo", "Asesoramiento en importaciones"]
+      "features": ["Gestión aduanera completa", "Consolidación de carga", "Transporte aéreo directo", "Asesoramiento en importaciones"]
     },
     "personal": {
       "title": "Compras Personalizadas",
@@ -212,39 +212,114 @@
   },
   "faq": {
     "title": "Preguntas Frecuentes",
-    "subtitle": "Resolvemos las dudas m\u00e1s comunes sobre nuestros servicios",
+    "subtitle": "Resolvemos las dudas más comunes sobre nuestros servicios",
+    "categories": {
+      "usa": "Envíos desde USA",
+      "china": "Importaciones desde China",
+      "personal": "Compras Personalizadas",
+      "customs": "Aduanas e Impuestos",
+      "general": "General"
+    },
     "items": {
       "q1": {
-        "question": "\u00bfC\u00f3mo funciona la casilla en Miami?",
-        "answer": "Te asignamos una direcci\u00f3n en nuestra bodega de Miami. Puedes usar esta direcci\u00f3n para recibir tus compras de cualquier tienda en Estados Unidos. Una vez que llegan, las consolidamos y enviamos a Chile o Paraguay."
+        "question": "¿Cómo funciona la casilla en Miami?",
+        "answer": "Te asignamos una dirección en nuestra bodega de Miami. Puedes usar esta dirección para recibir tus compras de cualquier tienda en Estados Unidos. Una vez que llegan, las consolidamos y enviamos a Chile o Paraguay.",
+        "category": "usa"
       },
       "q2": {
-        "question": "\u00bfCu\u00e1nto tiempo demora un env\u00edo desde USA?",
-        "answer": "Los env\u00edos a\u00e9reos desde Miami a Chile o Paraguay toman entre 5 a 10 d\u00edas h\u00e1biles, dependiendo del volumen y la modalidad seleccionada. Realizamos despachos semanales."
+        "question": "¿Cuánto tiempo demora un envío desde USA?",
+        "answer": "Los envíos aéreos desde Miami a Chile o Paraguay toman entre 5 a 10 días hábiles, dependiendo del volumen y la modalidad seleccionada. Realizamos despachos semanales.",
+        "category": "usa"
       },
       "q3": {
-        "question": "\u00bfPuedo rastrear mi paquete?",
-        "answer": "S\u00ed, proporcionamos seguimiento en tiempo real desde que tu paquete llega a nuestra bodega hasta la entrega en tu domicilio. Recibir\u00e1s actualizaciones por WhatsApp o email."
+        "question": "¿Puedo consolidar varios paquetes en un solo envío?",
+        "answer": "Sí, agrupamos todos tus paquetes que llegan a nuestra bodega de Miami en un solo envío para reducir costos de transporte. Puedes acumular compras de distintas tiendas y enviarlo todo junto.",
+        "category": "usa"
       },
       "q4": {
-        "question": "\u00bfQu\u00e9 productos est\u00e1n prohibidos?",
-        "answer": "No se pueden enviar materiales peligrosos, armas, sustancias ilegales, ni productos perecibles. Para la lista completa, cons\u00faltanos directamente o revisa las regulaciones aduaneras del pa\u00eds de destino."
+        "question": "¿Qué pasa si mi paquete llega dañado a la bodega en Miami?",
+        "answer": "Al recibir cada paquete, realizamos un registro fotográfico y te notificamos su estado. Si detectamos daños, te informamos inmediatamente para coordinar una devolución o reclamo con la tienda antes del envío internacional.",
+        "category": "usa"
       },
       "q5": {
-        "question": "\u00bfC\u00f3mo funcionan las importaciones desde China?",
-        "answer": "Gestionamos todo el proceso: desde la coordinaci\u00f3n con el proveedor chino, consolidaci\u00f3n de carga, transporte mar\u00edtimo o a\u00e9reo, tr\u00e1mites aduaneros y entrega final en Chile o Paraguay."
+        "question": "¿Cómo funcionan las importaciones desde China?",
+        "answer": "Gestionamos todo el proceso: búsqueda y verificación de proveedores, negociación de precios, control de calidad en fábrica, consolidación de carga, transporte aéreo, trámites aduaneros y entrega final en Chile o Paraguay. Para envíos marítimos, ofrecemos cotizaciones personalizadas.",
+        "category": "china"
       },
       "q6": {
-        "question": "\u00bfQu\u00e9 incluye el servicio de compras personalizadas?",
-        "answer": "Buscamos el producto que necesitas, verificamos al vendedor, realizamos la compra en tu nombre, inspeccionamos la calidad y lo enviamos directamente a tu domicilio. T\u00fa solo eliges y nosotros hacemos el resto."
+        "question": "¿Cuál es el volumen mínimo para importar desde China?",
+        "answer": "No exigimos un mínimo estricto, pero recomendamos volúmenes que justifiquen los costos de flete internacional. Para pedidos pequeños, puede ser más conveniente nuestro servicio de compras personalizadas. Te asesoramos para encontrar la mejor opción.",
+        "category": "china"
       },
       "q7": {
-        "question": "\u00bfC\u00f3mo se calculan los costos de env\u00edo?",
-        "answer": "Los costos se calculan en base al peso y dimensiones del paquete. Consolidamos tus compras para reducir el volumen y optimizar el precio. Solicita una cotizaci\u00f3n para obtener un precio exacto."
+        "question": "¿Cuánto demora una importación desde China?",
+        "answer": "El transporte aéreo toma entre 10 a 15 días hábiles. Para envíos marítimos (35 a 50 días hábiles), puedes solicitar una cotización personalizada. A esto se suma el tiempo de producción (si aplica) y despacho aduanero. Te proporcionamos un cronograma detallado en cada operación.",
+        "category": "china"
       },
       "q8": {
-        "question": "\u00bfGestionan los tr\u00e1mites aduaneros?",
-        "answer": "S\u00ed, nos encargamos de toda la documentaci\u00f3n y gesti\u00f3n aduanera necesaria para que tus productos ingresen sin problemas a Chile o Paraguay."
+        "question": "¿Cómo verifican la calidad de los proveedores chinos?",
+        "answer": "Realizamos auditorías previas del proveedor, solicitamos muestras del producto, y coordinamos inspecciones en fábrica antes del embarque. Esto asegura que el producto cumpla con tus especificaciones y estándares de calidad.",
+        "category": "china"
+      },
+      "q9": {
+        "question": "¿Qué incluye el servicio de compras personalizadas?",
+        "answer": "Buscamos el producto que necesitas en tiendas de USA o China, verificamos al vendedor, realizamos la compra en tu nombre, inspeccionamos la calidad, y lo enviamos directamente a tu domicilio en Chile o Paraguay. Tú solo eliges y nosotros hacemos el resto.",
+        "category": "personal"
+      },
+      "q10": {
+        "question": "¿Necesito tarjeta de crédito internacional para usar el servicio?",
+        "answer": "No. Nosotros realizamos la compra por ti, por lo que no necesitas tarjeta internacional. Te enviamos la cotización total incluyendo producto, envío, aduana e impuestos, y tú pagas en moneda local.",
+        "category": "personal"
+      },
+      "q11": {
+        "question": "¿En qué tiendas pueden comprar por mí?",
+        "answer": "Compramos en cualquier tienda online o física de Estados Unidos y China, incluyendo Amazon, eBay, Walmart, Best Buy, Alibaba, entre otras. Si la tienda no envía a tu país o requiere tarjeta local, nosotros lo gestionamos.",
+        "category": "personal"
+      },
+      "q12": {
+        "question": "¿Qué impuestos debo pagar al recibir mi paquete en Chile?",
+        "answer": "En Chile, las compras internacionales están sujetas a un arancel aduanero del 6% sobre el valor CIF (costo + seguro + flete) y un IVA del 19% sobre el valor CIF más el arancel. Compras bajo USD 41 pueden estar exentas según la normativa vigente del Servicio Nacional de Aduanas.",
+        "category": "customs"
+      },
+      "q13": {
+        "question": "¿Qué impuestos debo pagar al recibir mi paquete en Paraguay?",
+        "answer": "En Paraguay, las importaciones están sujetas a un arancel aduanero del 6% sobre el valor CIF y un IVA del 10%. Según la normativa de la Dirección Nacional de Aduanas (DNA), existen regímenes simplificados para envíos de menor cuantía. Te asesoramos sobre la mejor opción.",
+        "category": "customs"
+      },
+      "q14": {
+        "question": "¿Ustedes gestionan los trámites aduaneros?",
+        "answer": "Sí, nos encargamos de toda la documentación y gestión aduanera necesaria. Esto incluye facturas comerciales, packing list, certificados de origen cuando aplique, y coordinación con agentes de aduana en Chile y Paraguay para que tus productos ingresen sin problemas.",
+        "category": "customs"
+      },
+      "q15": {
+        "question": "¿Qué productos están prohibidos o restringidos para importar?",
+        "answer": "No se pueden enviar materiales peligrosos, armas, sustancias ilegales, ni productos perecibles. Algunos productos como alimentos, cosméticos, medicamentos y electrónicos pueden requerir permisos especiales de organismos como el ISP, SAG o SEREMI en Chile, o del INAN y SENACSA en Paraguay. Te asesoramos sobre los requisitos específicos.",
+        "category": "customs"
+      },
+      "q16": {
+        "question": "¿Existe un monto máximo de compra sin pagar impuestos?",
+        "answer": "En Chile, las compras bajo USD 41 pueden ingresar sin pago de aranceles bajo el régimen de envíos de bajo valor, según la normativa del Servicio Nacional de Aduanas. En Paraguay, el régimen simplificado de la DNA permite importaciones de menor cuantía con trámites reducidos. Los montos y condiciones pueden variar, por lo que te recomendamos consultarnos.",
+        "category": "customs"
+      },
+      "q17": {
+        "question": "¿Puedo rastrear mi paquete?",
+        "answer": "Sí, proporcionamos seguimiento en tiempo real desde que tu paquete llega a nuestra bodega hasta la entrega en tu domicilio. Recibirás actualizaciones por WhatsApp o email en cada etapa del proceso.",
+        "category": "general"
+      },
+      "q18": {
+        "question": "¿Cómo se calculan los costos de envío?",
+        "answer": "Los costos se calculan en base al peso real o volumétrico del paquete (se cobra el mayor). El peso volumétrico se calcula como (alto × ancho × largo en cm) / 5000. Consolidamos tus compras para reducir volumen y optimizar el precio. Usa nuestra calculadora en línea para obtener un estimado.",
+        "category": "general"
+      },
+      "q19": {
+        "question": "¿Qué métodos de pago aceptan?",
+        "answer": "Aceptamos transferencias bancarias en Chile y Paraguay, y coordinamos el pago de forma directa por WhatsApp. Para importaciones desde China, trabajamos con esquemas de pago flexibles según el volumen de la operación.",
+        "category": "general"
+      },
+      "q20": {
+        "question": "¿Ofrecen seguro para los envíos?",
+        "answer": "Sí, todos nuestros envíos incluyen cobertura básica. Para productos de alto valor, ofrecemos seguro adicional que cubre el valor declarado del producto. Contáctanos para más detalles sobre las opciones de cobertura disponibles.",
+        "category": "general"
       }
     }
   },
@@ -255,7 +330,10 @@
     "legal": "Legal",
     "privacy": "Pol\u00edtica de Privacidad",
     "terms": "T\u00e9rminos y Condiciones",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "paymentMethods": "Medios de Pago",
+    "localPartners": "Partners Locales",
+    "internationalPartners": "Partners Internacionales"
   },
   "usaPage": {
     "title": "Env\u00edos desde Estados Unidos",
@@ -320,7 +398,7 @@
       },
       "logistics": {
         "title": "Log\u00edstica Internacional",
-        "description": "Gestionamos el transporte mar\u00edtimo o a\u00e9reo seg\u00fan tus necesidades de tiempo y presupuesto."
+        "description": "Gestionamos el transporte aéreo de tu carga. Para envíos marítimos, solicita una cotización personalizada."
       },
       "customs": {
         "title": "Despacho Aduanero",
@@ -332,22 +410,21 @@
       }
     },
     "comparison": {
-      "title": "Aéreo vs Marítimo",
-      "subtitle": "Elige la modalidad que mejor se adapte a tus necesidades de tiempo y presupuesto",
+      "title": "Modalidades de Envío",
+      "subtitle": "Todos nuestros envíos son por transporte aéreo. Para envíos marítimos, solicita una cotización personalizada",
       "time": "Tiempo de tránsito",
       "cost": "Costo",
       "ideal": "Ideal para",
       "air": {
         "title": "Transporte Aéreo",
         "time": "10 a 15 días hábiles",
-        "cost": "Mayor costo por kg, menor volumen",
-        "ideal": "Pedidos urgentes, muestras, productos de alto valor"
+        "cost": "Tarifa por kg con seguimiento completo",
+        "ideal": "Todo tipo de pedidos: muestras, productos de alto valor, inventario"
       },
-      "sea": {
-        "title": "Transporte Marítimo",
-        "time": "35 a 50 días hábiles",
-        "cost": "Menor costo por kg, grandes volúmenes",
-        "ideal": "Pedidos grandes, productos pesados, reposición de inventario"
+      "maritime": {
+        "title": "¿Necesitas envío marítimo?",
+        "description": "Para cargas grandes o volúmenes que requieran transporte marítimo, ofrecemos cotizaciones personalizadas según tu producto, cantidad y destino.",
+        "cta": "Solicitar cotización marítima"
       }
     },
     "process": {
@@ -367,7 +444,7 @@
       },
       "p4": {
         "title": "Embarque Internacional",
-        "description": "Coordinamos el transporte aéreo o marítimo con las mejores navieras y aerolíneas."
+        "description": "Coordinamos el transporte aéreo con las mejores aerolíneas. Para envíos marítimos, ofrecemos cotización personalizada."
       },
       "p5": {
         "title": "Despacho Aduanero",
@@ -407,9 +484,7 @@
     "title": "Cotiza tu Env\u00edo",
     "subtitle": "Calcula el costo estimado de tu env\u00edo en tiempo real con tipo de cambio actualizado",
     "destination": "Pa\u00eds de destino",
-    "shippingMode": "Modalidad de env\u00edo",
     "air": "A\u00e9reo",
-    "sea": "Mar\u00edtimo",
     "productValue": "Valor del producto",
     "shippingToMiami": "Costo de env\u00edo a Miami (opcional)",
     "shippingToMiamiHint": "Costo del env\u00edo dentro de USA hasta nuestra bodega en Miami. Si a\u00fan no lo sabes, puedes dejarlo en 0.",
@@ -423,13 +498,126 @@
     "chargeableWeight": "Peso cobrable",
     "resultChile": "Total puesto en Chile",
     "resultParaguay": "Total puesto en Paraguay",
-    "transport": "Transporte",
+    "breakdown": "Desglose del costo",
+    "merchandise": "Mercadería",
+    "domesticShipping": "Envío interno a Miami",
+    "transport": "Flete internacional",
+    "customsDuty": "Arancel aduanero",
+    "ivaLabel": "IVA",
     "customsTaxes": "Aduana e impuestos",
-    "estimatedTotal": "Total estimado",
+    "estimatedTotal": "Total puesto en destino",
     "exchangeRate": "Tipo de cambio",
     "disclaimer": "Los valores son aproximados y pueden variar seg\u00fan las dimensiones reales del paquete. El peso cobrable ser\u00e1 siempre el mayor entre el peso real y el peso volum\u00e9trico. Para un presupuesto definitivo, cont\u00e1ctanos por WhatsApp.",
     "requestFinal": "Solicitar cotizaci\u00f3n final",
     "whatsappQuote": "Hola, acabo de usar el cotizador. Mi env\u00edo estimado es de USD {total}, peso cobrable {weight} kg, modalidad {mode}. Me gustar\u00eda confirmar el precio final."
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "subtitle": "Cómo protegemos y tratamos tus datos personales",
+    "lastUpdate": "Última actualización: 22 de marzo de 2026",
+    "intro": "En EnviosCasilla nos comprometemos a proteger la privacidad de nuestros usuarios. Esta política describe cómo recopilamos, usamos y protegemos tu información personal, en cumplimiento con la Ley N° 19.628 sobre Protección de la Vida Privada de Chile, la Ley N° 1.682/2001 de Paraguay, y demás normativas aplicables.",
+    "sections": {
+      "s1": {
+        "title": "1. Datos que recopilamos",
+        "content": "Recopilamos la información que nos proporcionas directamente al usar nuestros servicios:\n\n• **Datos de identificación:** nombre completo, correo electrónico, número de teléfono.\n• **Datos de envío:** dirección de entrega, país de destino, contenido declarado de los paquetes.\n• **Datos de contacto:** mensajes enviados por WhatsApp, formulario de contacto o email.\n• **Datos de navegación:** cookies, dirección IP, tipo de navegador y páginas visitadas (de forma anónima y agregada).\n\nNo recopilamos datos financieros como números de tarjetas de crédito."
+      },
+      "s2": {
+        "title": "2. Uso de la información",
+        "content": "Utilizamos tus datos personales exclusivamente para:\n\n• Gestionar y procesar tus envíos internacionales.\n• Realizar trámites aduaneros en tu nombre ante el Servicio Nacional de Aduanas de Chile o la Dirección Nacional de Aduanas de Paraguay.\n• Comunicarnos contigo sobre el estado de tus envíos.\n• Responder a tus consultas y solicitudes de cotización.\n• Mejorar nuestros servicios y experiencia de usuario.\n• Cumplir con obligaciones legales y regulatorias."
+      },
+      "s3": {
+        "title": "3. Base legal del tratamiento",
+        "content": "El tratamiento de tus datos se fundamenta en:\n\n• **Tu consentimiento** al proporcionarnos tus datos y aceptar esta política.\n• **La ejecución contractual** de los servicios de envío que solicitas.\n• **El cumplimiento de obligaciones legales**, como la normativa aduanera y tributaria de Chile (Ordenanza de Aduanas, DFL N° 30) y Paraguay (Código Aduanero, Ley N° 2.422/2004).\n• **El interés legítimo** de mejorar nuestros servicios y prevenir fraude."
+      },
+      "s4": {
+        "title": "4. Compartición de datos con terceros",
+        "content": "Compartimos tus datos únicamente cuando es necesario para prestar el servicio:\n\n• **Autoridades aduaneras:** Servicio Nacional de Aduanas de Chile o Dirección Nacional de Aduanas de Paraguay, según corresponda, para el despacho de tus paquetes.\n• **Empresas de transporte:** aerolíneas y navieras para el traslado internacional de tu carga.\n• **Agentes de aduana:** despachadores autorizados que gestionan el ingreso de mercancías.\n\nNo vendemos, alquilamos ni compartimos tus datos con terceros para fines publicitarios."
+      },
+      "s5": {
+        "title": "5. Tus derechos",
+        "content": "De acuerdo con la legislación vigente, tienes derecho a:\n\n• **Acceso:** solicitar información sobre los datos personales que tenemos sobre ti.\n• **Rectificación:** corregir datos inexactos o desactualizados.\n• **Cancelación:** solicitar la eliminación de tus datos cuando ya no sean necesarios.\n• **Oposición:** oponerte al tratamiento de tus datos en determinadas circunstancias.\n\nPara ejercer estos derechos, contáctanos a contacto@envios-casilla.com. Responderemos en un plazo máximo de 15 días hábiles."
+      },
+      "s6": {
+        "title": "6. Seguridad de los datos",
+        "content": "Implementamos medidas técnicas y organizativas para proteger tus datos personales contra acceso no autorizado, pérdida o alteración. Esto incluye cifrado de comunicaciones, acceso restringido a la información y protocolos de seguridad en nuestros sistemas."
+      },
+      "s7": {
+        "title": "7. Cookies",
+        "content": "Nuestro sitio web utiliza cookies técnicas necesarias para su funcionamiento. No utilizamos cookies de seguimiento publicitario. Las cookies de análisis se procesan de forma anónima y agregada para mejorar la experiencia del usuario."
+      },
+      "s8": {
+        "title": "8. Retención de datos",
+        "content": "Conservamos tus datos personales durante el tiempo necesario para cumplir con los fines para los que fueron recopilados y para cumplir con obligaciones legales. Los registros de envíos y documentación aduanera se conservan por el plazo legal exigido por las autoridades competentes (5 años según la normativa aduanera)."
+      },
+      "s9": {
+        "title": "9. Modificaciones a esta política",
+        "content": "Nos reservamos el derecho de actualizar esta política de privacidad. Cualquier cambio significativo será notificado a través de nuestro sitio web o por correo electrónico. Te recomendamos revisar esta página periódicamente."
+      },
+      "s10": {
+        "title": "10. Contacto",
+        "content": "Si tienes preguntas sobre esta política de privacidad o deseas ejercer tus derechos, contáctanos:\n\n• **Email:** contacto@envios-casilla.com\n• **WhatsApp Chile:** +56 9 2842 3774\n• **WhatsApp Paraguay:** +595 992 110 955"
+      }
+    }
+  },
+  "terms": {
+    "title": "Términos y Condiciones",
+    "subtitle": "Condiciones generales de uso de nuestros servicios",
+    "lastUpdate": "Última actualización: 22 de marzo de 2026",
+    "intro": "Los presentes Términos y Condiciones regulan la relación entre EnviosCasilla (en adelante, \"la Empresa\") y los usuarios de nuestros servicios de envío internacional, importación y compras personalizadas. Al utilizar nuestros servicios, aceptas estos términos en su totalidad.",
+    "sections": {
+      "s1": {
+        "title": "1. Descripción de los servicios",
+        "content": "EnviosCasilla ofrece los siguientes servicios:\n\n• **Envíos desde USA:** casilla postal en Miami, FL, para recepción, consolidación y envío de paquetes a Chile y Paraguay.\n• **Importaciones desde China:** gestión integral de importaciones incluyendo búsqueda de proveedores, control de calidad, transporte y despacho aduanero.\n• **Compras personalizadas:** servicio de compra en nombre del cliente en tiendas de Estados Unidos y China.\n\nLos servicios están disponibles para personas naturales y jurídicas residentes en Chile y Paraguay."
+      },
+      "s2": {
+        "title": "2. Registro y uso de la casilla",
+        "content": "Al solicitar una casilla en Miami, el usuario:\n\n• Debe proporcionar datos verídicos y actualizados.\n• Recibe una dirección exclusiva en nuestra bodega para recibir paquetes.\n• Se compromete a declarar verazmente el contenido y valor de sus envíos.\n• Acepta que la casilla es de uso personal e intransferible."
+      },
+      "s3": {
+        "title": "3. Productos prohibidos y restringidos",
+        "content": "Queda estrictamente prohibido enviar:\n\n• Materiales peligrosos, inflamables o explosivos.\n• Armas de fuego y municiones.\n• Sustancias controladas o ilegales.\n• Productos perecibles sin autorización especial.\n• Mercancía falsificada o que infrinja propiedad intelectual.\n• Cualquier producto cuya importación esté prohibida por la legislación de Chile (Ordenanza de Aduanas) o Paraguay (Ley N° 2.422/2004, Código Aduanero).\n\nEl usuario es responsable del contenido de sus paquetes. EnviosCasilla se reserva el derecho de rechazar o devolver envíos que incumplan estas restricciones."
+      },
+      "s4": {
+        "title": "4. Tarifas y formas de pago",
+        "content": "• Las tarifas se calculan según peso real o volumétrico (el mayor de ambos).\n• Los precios son en dólares estadounidenses (USD), con conversión a moneda local (CLP o PYG) al tipo de cambio vigente.\n• Los costos de aduana, impuestos y aranceles son responsabilidad del destinatario y se calculan según la normativa vigente de cada país.\n• El pago debe realizarse antes del despacho del envío.\n• Aceptamos transferencias bancarias en Chile y Paraguay."
+      },
+      "s5": {
+        "title": "5. Plazos de entrega",
+        "content": "• **Envíos aéreos desde USA:** 5 a 10 días hábiles.\n• **Transporte aéreo desde China:** 10 a 15 días hábiles.\n• **Transporte marítimo (bajo cotización personalizada):** 35 a 50 días hábiles.\n\nTodos los envíos estándar son por transporte aéreo. Los envíos marítimos están disponibles bajo cotización personalizada.\n\nEstos plazos son estimados y pueden variar por causas ajenas a nuestro control, como retrasos en aduanas, condiciones climáticas o problemas logísticos. EnviosCasilla no será responsable por retrasos causados por fuerza mayor."
+      },
+      "s6": {
+        "title": "6. Responsabilidad y limitaciones",
+        "content": "• EnviosCasilla actúa como intermediario logístico y no es responsable por defectos de los productos adquiridos por el cliente.\n• Nuestra responsabilidad se limita al valor declarado del envío.\n• No nos hacemos responsables por información incorrecta proporcionada por el usuario (dirección, contenido declarado, valor).\n• En caso de pérdida o daño durante el transporte, la compensación máxima será el valor declarado del paquete, sujeto a las condiciones del seguro contratado.\n• La Empresa no será responsable por confiscaciones o retenciones realizadas por autoridades aduaneras debido al contenido del paquete."
+      },
+      "s7": {
+        "title": "7. Trámites aduaneros e impuestos",
+        "content": "• EnviosCasilla gestiona los trámites aduaneros en nombre del cliente.\n• **Chile:** los envíos están sujetos a un arancel del 6% sobre el valor CIF y un IVA del 19%, según la Ordenanza de Aduanas y la normativa del Servicio Nacional de Aduanas. Compras bajo USD 41 pueden estar exentas.\n• **Paraguay:** los envíos están sujetos a un arancel del 6% sobre el valor CIF y un IVA del 10%, según el Código Aduanero (Ley N° 2.422/2004) y normativas de la Dirección Nacional de Aduanas.\n• El usuario es responsable del pago de todos los impuestos y aranceles aplicables.\n• Los montos de impuestos calculados por nuestra plataforma son estimados y pueden variar."
+      },
+      "s8": {
+        "title": "8. Almacenamiento en bodega",
+        "content": "• Los paquetes recibidos en nuestra bodega de Miami se almacenan gratuitamente por un período de 30 días.\n• Transcurrido este plazo, se aplicará un cargo por almacenamiento.\n• Paquetes no reclamados después de 90 días podrán ser devueltos o descartados, previa notificación al usuario."
+      },
+      "s9": {
+        "title": "9. Compras personalizadas",
+        "content": "• El servicio de compras personalizadas requiere aprobación previa de la cotización por parte del cliente.\n• Una vez realizada la compra, no se aceptan cancelaciones ni devoluciones, salvo que el producto recibido no corresponda a lo solicitado.\n• Las devoluciones a la tienda de origen se gestionan según las políticas de cada vendedor y los costos asociados son responsabilidad del cliente.\n• EnviosCasilla no garantiza disponibilidad de productos ni precios específicos."
+      },
+      "s10": {
+        "title": "10. Protección al consumidor",
+        "content": "Estos términos se rigen por:\n\n• **Chile:** Ley N° 19.496 sobre Protección de los Derechos de los Consumidores y sus modificaciones.\n• **Paraguay:** Ley N° 1.334/1998 de Defensa del Consumidor y del Usuario.\n\nEl usuario puede ejercer sus derechos ante el SERNAC en Chile o la SEDECO en Paraguay."
+      },
+      "s11": {
+        "title": "11. Resolución de conflictos",
+        "content": "Las partes se comprometen a resolver cualquier controversia de buena fe. En caso de no llegar a acuerdo:\n\n• Para usuarios en Chile, los conflictos se someterán a la jurisdicción de los tribunales ordinarios de Santiago.\n• Para usuarios en Paraguay, los conflictos se someterán a la jurisdicción de los tribunales ordinarios de Asunción.\n\nEl usuario también puede recurrir a los mecanismos de mediación disponibles en el SERNAC (Chile) o SEDECO (Paraguay)."
+      },
+      "s12": {
+        "title": "12. Modificaciones",
+        "content": "EnviosCasilla se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Los cambios serán publicados en esta página y, en caso de modificaciones sustanciales, serán notificados por correo electrónico. El uso continuado de nuestros servicios implica la aceptación de los términos actualizados."
+      },
+      "s13": {
+        "title": "13. Contacto",
+        "content": "Para consultas sobre estos términos y condiciones:\n\n• **Email:** contacto@envios-casilla.com\n• **WhatsApp Chile:** +56 9 2842 3774\n• **WhatsApp Paraguay:** +595 992 110 955"
+      }
+    }
   },
   "personalPage": {
     "title": "Compras Personalizadas",

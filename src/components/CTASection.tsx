@@ -11,7 +11,7 @@ export default function CTASection() {
 
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-teal-900 to-slate-900" />
+      <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-teal-900 to-slate-900" />
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl" />

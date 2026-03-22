@@ -16,6 +16,7 @@ import {
 import AnimatedSection from "@/components/AnimatedSection";
 import ParallaxSection from "@/components/ParallaxSection";
 import CTASection from "@/components/CTASection";
+import PartnersStrip from "@/components/PartnersStrip";
 
 export default function USAShippingPage() {
   const t = useTranslations("usaPage");
@@ -84,7 +85,7 @@ export default function USAShippingPage() {
               return (
                 <AnimatedSection key={item.key} delay={index * 0.08}>
                   <div className="bg-slate-50 rounded-2xl p-7 border border-slate-200 hover:border-teal-200 hover:shadow-md transition-all duration-300 h-full">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500/10 to-cyan-500/10 flex items-center justify-center mb-5">
+                    <div className="w-12 h-12 rounded-xl bg-linear-to-br from-teal-500/10 to-cyan-500/10 flex items-center justify-center mb-5">
                       <Icon className="w-6 h-6 text-teal-600" />
                     </div>
                     <h3 className="text-base font-bold text-slate-800 mb-2">
@@ -113,7 +114,7 @@ export default function USAShippingPage() {
             {steps.map((step, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
                 <div className="flex items-start gap-4 mb-6">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center text-white font-bold text-sm">
+                  <div className="shrink-0 w-10 h-10 rounded-full bg-linear-to-br from-teal-500 to-cyan-600 flex items-center justify-center text-white font-bold text-sm">
                     {index + 1}
                   </div>
                   <div className="pt-2">
@@ -130,7 +131,7 @@ export default function USAShippingPage() {
       <section className="py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
-            <div className="bg-gradient-to-r from-slate-900 to-teal-900 rounded-2xl p-8 sm:p-12 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+            <div className="bg-linear-to-r from-slate-900 to-teal-900 rounded-2xl p-8 sm:p-12 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
               <div className="flex-1">
                 <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-teal-500/10 border border-teal-500/20 rounded-full mb-4">
                   <Calculator className="w-3.5 h-3.5 text-teal-400" />
@@ -139,10 +140,10 @@ export default function USAShippingPage() {
                 <h3 className="text-2xl sm:text-3xl font-bold text-white">{tQuote("title")}</h3>
                 <p className="mt-3 text-slate-300 max-w-lg">{tQuote("description")}</p>
               </div>
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <Link
                   href="/quote"
-                  className="group inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-teal-400 hover:to-cyan-400 transition-all shadow-lg shadow-teal-500/25"
+                  className="group inline-flex items-center gap-2 px-8 py-4 bg-linear-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-teal-400 hover:to-cyan-400 transition-all shadow-lg shadow-teal-500/25"
                 >
                   <Calculator className="w-5 h-5" />
                   {tQuote("cta")}
@@ -153,6 +154,8 @@ export default function USAShippingPage() {
           </AnimatedSection>
         </div>
       </section>
+
+      <PartnersStrip />
 
       <CTASection />
     </>

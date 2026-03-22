@@ -8,8 +8,6 @@ import {
   Scale,
   Ruler,
   DollarSign,
-  Plane,
-  Ship,
   RefreshCw,
   Info,
   ArrowRight,
@@ -23,8 +21,7 @@ interface ExchangeRates {
   PYG: number;
 }
 
-const RATE_PER_KG_AIR = 12.5;
-const RATE_PER_KG_SEA = 5.5;
+const RATE_PER_KG = 5.63;
 const CUSTOMS_RATE_CL = 0.06;
 const IVA_CL = 0.19;
 const CUSTOMS_RATE_PY = 0.06;
@@ -34,7 +31,6 @@ export default function QuotePage() {
   const t = useTranslations("quote");
 
   const [country, setCountry] = useState<"chile" | "paraguay">("chile");
-  const [shippingMode, setShippingMode] = useState<"air" | "sea">("air");
   const [productValue, setProductValue] = useState("");
   const [shippingToMiami, setShippingToMiami] = useState("");
   const [weight, setWeight] = useState("");
@@ -50,7 +46,7 @@ export default function QuotePage() {
     fetch("/api/exchange-rate")
       .then((r) => r.json())
       .then((data) => {
-        setRates({ CLP: data.rate || 950, PYG: data.PYG || 7700 });
+        setRates({ CLP: data.CLP || 950, PYG: data.PYG || 7700 });
         setLoadingRate(false);
       })
       .catch(() => setLoadingRate(false));
@@ -74,9 +70,9 @@ export default function QuotePage() {
     }
 
     const chargeableWeight = Math.max(w, volWeight);
-    const ratePerKg = shippingMode === "air" ? RATE_PER_KG_AIR : RATE_PER_KG_SEA;
-    const transportUSD = chargeableWeight * ratePerKg;
+    const transportUSD = chargeableWeight * RATE_PER_KG;
 
+    // CIF = product value + domestic shipping + international freight
     const cifValue = val + domesticShipping + transportUSD;
 
     let customsDuty: number;
@@ -97,28 +93,34 @@ export default function QuotePage() {
     }
 
     const customsTotalUSD = customsDuty + iva;
+    // Total a pagar = solo flete + aduana (sin incluir valor del producto ni envío doméstico)
     const totalUSD = transportUSD + customsTotalUSD;
 
     return {
       volWeight: volWeight > 0 ? volWeight.toFixed(2) : "0.00",
       chargeableWeight: chargeableWeight > 0 ? chargeableWeight.toFixed(2) : "0.00",
+      cifUSD: cifValue.toFixed(2),
       transportUSD: transportUSD.toFixed(2),
       transportLocal: Math.round(transportUSD * localRate).toLocaleString(),
+      customsDutyUSD: customsDuty.toFixed(2),
+      ivaUSD: iva.toFixed(2),
       customsUSD: customsTotalUSD.toFixed(2),
       customsLocal: Math.round(customsTotalUSD * localRate).toLocaleString(),
       totalUSD: totalUSD.toFixed(2),
       totalLocal: Math.round(totalUSD * localRate).toLocaleString(),
       currency,
       localRate: localRate.toFixed(2),
+      customsRateLabel: "6%",
+      ivaRateLabel: country === "chile" ? "19%" : "10%",
     };
-  }, [productValue, shippingToMiami, weight, height, width, length, weightUnit, dimUnit, shippingMode, country, rates]);
+  }, [productValue, shippingToMiami, weight, height, width, length, weightUnit, dimUnit, country, rates]);
 
   const result = calculate();
 
   return (
     <>
       <section className="relative py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900" />
+        <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-slate-800 to-teal-900" />
         <div className="absolute inset-0">
           <div className="absolute top-10 right-20 w-72 h-72 bg-teal-500/10 rounded-full blur-3xl" />
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500/8 rounded-full blur-3xl" />
@@ -177,40 +179,7 @@ export default function QuotePage() {
                     </div>
                   </div>
 
-                  {/* Shipping mode */}
-                  <div className="mb-8">
-                    <label className="block text-sm font-semibold text-slate-700 mb-3">
-                      {t("shippingMode")}
-                    </label>
-                    <div className="grid grid-cols-2 gap-3">
-                      <button
-                        type="button"
-                        onClick={() => setShippingMode("air")}
-                        className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl border-2 transition-all text-sm font-medium ${
-                          shippingMode === "air"
-                            ? "border-teal-500 bg-teal-50 text-teal-700"
-                            : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
-                        }`}
-                      >
-                        <Plane className="w-4 h-4" />
-                        {t("air")}
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => setShippingMode("sea")}
-                        className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl border-2 transition-all text-sm font-medium ${
-                          shippingMode === "sea"
-                            ? "border-teal-500 bg-teal-50 text-teal-700"
-                            : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
-                        }`}
-                      >
-                        <Ship className="w-4 h-4" />
-                        {t("sea")}
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Product value */}
+                  {/* Product value + shipping combined */}
                   <div className="mb-6">
                     <label className="flex items-center gap-2 text-sm font-semibold text-slate-700 mb-2">
                       <DollarSign className="w-4 h-4 text-teal-600" />
@@ -334,7 +303,7 @@ export default function QuotePage() {
 
                   {/* Vol weight info */}
                   <div className="flex items-start gap-2 p-4 bg-teal-50 border border-teal-100 rounded-xl">
-                    <Package className="w-5 h-5 text-teal-600 flex-shrink-0 mt-0.5" />
+                    <Package className="w-5 h-5 text-teal-600 shrink-0 mt-0.5" />
                     <div className="text-sm text-teal-800">
                       <span className="font-semibold">{t("volWeight")}:</span>{" "}
                       {result.volWeight} kg |{" "}
@@ -346,7 +315,7 @@ export default function QuotePage() {
               </AnimatedSection>
             </div>
 
-            {/* Results Panel - Light theme */}
+            {/* Results Panel */}
             <div className="lg:col-span-2">
               <AnimatedSection delay={0.15}>
                 <div className="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 sticky top-28">
@@ -355,29 +324,35 @@ export default function QuotePage() {
                     {country === "chile" ? t("resultChile") : t("resultParaguay")}
                   </h3>
 
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center py-3 border-b border-slate-200">
+                  <div className="space-y-0">
+                    {/* International freight */}
+                    <div className="flex justify-between items-center py-3 border-b border-slate-100">
                       <span className="text-slate-500 text-sm">{t("transport")}</span>
                       <div className="text-right">
-                        <div className="font-bold text-slate-900">USD {result.transportUSD}</div>
-                        <div className="text-xs text-slate-400">
-                          $ {result.transportLocal} {result.currency}
-                        </div>
+                        <span className="font-semibold text-slate-800 text-sm">USD {result.transportUSD}</span>
+                        <div className="text-xs text-slate-400">$ {result.transportLocal} {result.currency}</div>
                       </div>
                     </div>
 
+                    {/* Customs duty */}
+                    <div className="flex justify-between items-center py-3 border-b border-slate-100">
+                      <span className="text-slate-500 text-sm">
+                        {t("customsDuty")} <span className="text-slate-400">({result.customsRateLabel})</span>
+                      </span>
+                      <span className="font-semibold text-slate-800 text-sm">USD {result.customsDutyUSD}</span>
+                    </div>
+
+                    {/* IVA */}
                     <div className="flex justify-between items-center py-3 border-b border-slate-200">
-                      <span className="text-slate-500 text-sm">{t("customsTaxes")}</span>
-                      <div className="text-right">
-                        <div className="font-bold text-slate-900">USD {result.customsUSD}</div>
-                        <div className="text-xs text-slate-400">
-                          $ {result.customsLocal} {result.currency}
-                        </div>
-                      </div>
+                      <span className="text-slate-500 text-sm">
+                        {t("ivaLabel")} <span className="text-slate-400">({result.ivaRateLabel})</span>
+                      </span>
+                      <span className="font-semibold text-slate-800 text-sm">USD {result.ivaUSD}</span>
                     </div>
 
-                    <div className="flex justify-between items-center py-4 bg-teal-50 border border-teal-100 rounded-xl px-4 -mx-1">
-                      <span className="font-bold text-teal-700">{t("estimatedTotal")}</span>
+                    {/* Total */}
+                    <div className="flex justify-between items-center py-4 mt-2 bg-teal-50 border border-teal-100 rounded-xl px-4 -mx-1">
+                      <span className="font-bold text-teal-700 text-sm">{t("estimatedTotal")}</span>
                       <div className="text-right">
                         <div className="text-xl font-extrabold text-slate-900">
                           USD {result.totalUSD}
@@ -389,14 +364,21 @@ export default function QuotePage() {
                     </div>
                   </div>
 
-                  <div className="mt-5 flex items-center gap-2 text-xs text-slate-400">
-                    <RefreshCw className={`w-3.5 h-3.5 ${loadingRate ? "animate-spin" : ""}`} />
-                    {t("exchangeRate")}: 1 USD = ${result.localRate} {result.currency}
+                  {/* CIF + Exchange rate info */}
+                  <div className="mt-5 space-y-1">
+                    <div className="flex items-center gap-2 text-xs text-slate-400">
+                      <Info className="w-3.5 h-3.5" />
+                      Valor CIF: USD {result.cifUSD}
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-slate-400">
+                      <RefreshCw className={`w-3.5 h-3.5 ${loadingRate ? "animate-spin" : ""}`} />
+                      {t("exchangeRate")}: 1 USD = ${result.localRate} {result.currency}
+                    </div>
                   </div>
 
                   <div className="mt-6 p-4 bg-amber-50 border border-amber-100 rounded-xl">
                     <div className="flex items-start gap-2">
-                      <Info className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                      <Info className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
                       <p className="text-xs text-amber-800 leading-relaxed">
                         {t("disclaimer")}
                       </p>
@@ -410,14 +392,14 @@ export default function QuotePage() {
                             t("whatsappQuote", {
                               total: result.totalUSD,
                               weight: result.chargeableWeight,
-                              mode: shippingMode === "air" ? t("air") : t("sea"),
+                              mode: t("air"),
                             })
                           )}`
                         : `https://wa.me/595992110955?text=${encodeURIComponent(
                             t("whatsappQuote", {
                               total: result.totalUSD,
                               weight: result.chargeableWeight,
-                              mode: shippingMode === "air" ? t("air") : t("sea"),
+                              mode: t("air"),
                             })
                           )}`
                     }

@@ -32,7 +32,7 @@ export default function ServiceCard({
       transition={{ duration: 0.5, delay: index * 0.15 }}
       className="group relative bg-white rounded-2xl p-8 border border-slate-200 hover:border-teal-300 hover:shadow-xl hover:shadow-teal-500/5 transition-all duration-300"
     >
-      <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-500/10 to-cyan-500/10 flex items-center justify-center mb-6 group-hover:from-teal-500/20 group-hover:to-cyan-500/20 transition-colors">
+      <div className="w-14 h-14 rounded-xl bg-linear-to-br from-teal-500/10 to-cyan-500/10 flex items-center justify-center mb-6 group-hover:from-teal-500/20 group-hover:to-cyan-500/20 transition-colors">
         <Icon className="w-7 h-7 text-teal-600" />
       </div>
 
@@ -42,7 +42,7 @@ export default function ServiceCard({
       <ul className="space-y-2 mb-6">
         {features.map((feature, i) => (
           <li key={i} className="flex items-center gap-2 text-sm text-slate-600">
-            <div className="w-1.5 h-1.5 rounded-full bg-teal-500 flex-shrink-0" />
+            <div className="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0" />
             {feature}
           </li>
         ))}

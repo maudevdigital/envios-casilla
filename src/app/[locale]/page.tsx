@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
@@ -19,12 +20,17 @@ import {
   ClipboardCheck,
   Home,
   Calculator,
+  Users,
+  Globe2,
+  CalendarDays,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import ServiceCard from "@/components/ServiceCard";
 import AnimatedSection from "@/components/AnimatedSection";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import ParallaxSection from "@/components/ParallaxSection";
 import CTASection from "@/components/CTASection";
+import PartnersStrip from "@/components/PartnersStrip";
 
 export default function HomePage() {
   const t = useTranslations();
@@ -103,7 +109,7 @@ export default function HomePage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/80 to-slate-900/95" />
+        <div className="absolute inset-0 bg-linear-to-b from-slate-900/90 via-slate-900/80 to-slate-900/95" />
 
         {/* Animated grid pattern */}
         <div className="absolute inset-0 opacity-[0.04]">
@@ -138,7 +144,7 @@ export default function HomePage() {
 
         {/* Animated scan line */}
         <motion.div
-          className="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-teal-400/30 to-transparent"
+          className="absolute inset-x-0 h-px bg-linear-to-r from-transparent via-teal-400/30 to-transparent"
           animate={{ top: ["0%", "100%"] }}
           transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
         />
@@ -168,7 +174,7 @@ export default function HomePage() {
                 <div className="mt-10 flex flex-col sm:flex-row gap-4">
                   <Link
                     href="/quote"
-                    className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-teal-400 hover:to-cyan-400 transition-all shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40"
+                    className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-linear-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-teal-400 hover:to-cyan-400 transition-all shadow-lg shadow-teal-500/25 hover:shadow-teal-500/40"
                   >
                     <Calculator className="w-5 h-5" />
                     {t("hero.cta")}
@@ -183,29 +189,39 @@ export default function HomePage() {
                 </div>
               </AnimatedSection>
 
-              <AnimatedSection delay={0.4}>
-                <div className="mt-14 flex items-center gap-10">
-                  <div>
-                    <div className="text-3xl font-extrabold text-white">5K+</div>
-                    <div className="text-xs text-slate-400 mt-1 uppercase tracking-wider">{t("about.stats.shipments")}</div>
-                  </div>
-                  <div className="w-px h-10 bg-slate-700" />
-                  <div>
-                    <div className="text-3xl font-extrabold text-white">2K+</div>
-                    <div className="text-xs text-slate-400 mt-1 uppercase tracking-wider">{t("about.stats.clients")}</div>
-                  </div>
-                  <div className="w-px h-10 bg-slate-700" />
-                  <div>
-                    <div className="text-3xl font-extrabold text-white">3</div>
-                    <div className="text-xs text-slate-400 mt-1 uppercase tracking-wider">{t("about.stats.countries")}</div>
-                  </div>
-                </div>
-              </AnimatedSection>
+              <div className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-2xl">
+                <AnimatedCounter
+                  target={5000}
+                  suffix="+"
+                  label={t("about.stats.shipments")}
+                  icon={<Package className="w-5 h-5 text-teal-400" />}
+                />
+                <AnimatedCounter
+                  target={2000}
+                  suffix="+"
+                  label={t("about.stats.clients")}
+                  icon={<Users className="w-5 h-5 text-teal-400" />}
+                />
+                <AnimatedCounter
+                  target={2}
+                  suffix=""
+                  duration={0.8}
+                  label={t("about.stats.countries")}
+                  icon={<Globe2 className="w-5 h-5 text-teal-400" />}
+                />
+                <AnimatedCounter
+                  target={5}
+                  suffix="+"
+                  duration={0.8}
+                  label={t("about.stats.years")}
+                  icon={<CalendarDays className="w-5 h-5 text-teal-400" />}
+                />
+              </div>
           </div>
         </div>
 
         {/* Bottom gradient fade */}
-        <div className="absolute bottom-0 inset-x-0 h-24 bg-gradient-to-t from-slate-50 to-transparent" />
+        <div className="absolute bottom-0 inset-x-0 h-24 bg-linear-to-t from-slate-50 to-transparent" />
       </section>
 
       {/* Services */}
@@ -255,12 +271,12 @@ export default function HomePage() {
               return (
                 <AnimatedSection key={index} delay={index * 0.1}>
                   <div className="relative text-center">
-                    <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6 shadow-lg shadow-teal-500/20">
+                    <div className="w-16 h-16 mx-auto rounded-2xl bg-linear-to-br from-teal-500 to-cyan-600 flex items-center justify-center mb-6 shadow-lg shadow-teal-500/20">
                       <Icon className="w-8 h-8 text-white" />
                     </div>
 
                     {index < steps.length - 1 && (
-                      <div className="hidden lg:block absolute top-8 left-[60%] w-[calc(100%-20%)] h-px bg-gradient-to-r from-teal-300 to-transparent" />
+                      <div className="hidden lg:block absolute top-8 left-[60%] w-[calc(100%-20%)] h-px bg-linear-to-r from-teal-300 to-transparent" />
                     )}
 
                     <div className="text-xs font-bold text-teal-600 mb-2">
@@ -283,7 +299,7 @@ export default function HomePage() {
       {/* Quote CTA with image */}
       <section className="relative overflow-hidden">
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="relative h-64 sm:h-80 lg:h-auto lg:min-h-[500px]">
+          <div className="relative h-64 sm:h-80 lg:h-auto lg:min-h-125">
             <Image
               src="/quote-cta.webp"
               alt={t("quoteCta.imageAlt")}
@@ -307,26 +323,27 @@ export default function HomePage() {
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/quote"
-                  className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-teal-400 hover:to-cyan-400 transition-all shadow-lg shadow-teal-500/25"
+                  className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-linear-to-r from-teal-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-teal-400 hover:to-cyan-400 transition-all shadow-lg shadow-teal-500/25"
                 >
                   <Calculator className="w-5 h-5" />
                   {t("quoteCta.cta")}
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
-              <div className="mt-8 grid grid-cols-3 gap-6">
-                <div>
-                  <div className="text-2xl font-bold text-teal-400">{t("quoteCta.feat1Value")}</div>
-                  <div className="text-xs text-slate-400 mt-1">{t("quoteCta.feat1")}</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-teal-400">{t("quoteCta.feat2Value")}</div>
-                  <div className="text-xs text-slate-400 mt-1">{t("quoteCta.feat2")}</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-teal-400">{t("quoteCta.feat3Value")}</div>
-                  <div className="text-xs text-slate-400 mt-1">{t("quoteCta.feat3")}</div>
-                </div>
+              <div className="mt-10 flex items-center gap-6 sm:gap-8">
+                {[
+                  { value: t("quoteCta.feat1Value"), label: t("quoteCta.feat1") },
+                  { value: t("quoteCta.feat2Value"), label: t("quoteCta.feat2") },
+                  { value: t("quoteCta.feat3Value"), label: t("quoteCta.feat3") },
+                ].map((feat, i) => (
+                  <React.Fragment key={i}>
+                    {i > 0 && <div className="w-px h-10 bg-slate-700/50 shrink-0" />}
+                    <div>
+                      <div className="text-lg sm:text-xl font-bold text-teal-400 leading-tight">{feat.value}</div>
+                      <div className="text-[11px] text-slate-400 mt-0.5 leading-tight">{feat.label}</div>
+                    </div>
+                  </React.Fragment>
+                ))}
               </div>
             </AnimatedSection>
           </div>
@@ -362,6 +379,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Partners & Payment */}
+      <PartnersStrip />
 
       {/* CTA */}
       <CTASection />

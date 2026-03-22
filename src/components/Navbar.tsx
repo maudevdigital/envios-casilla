@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Menu, X, ChevronDown, Globe } from "lucide-react";
@@ -13,6 +13,31 @@ export default function Navbar() {
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
+
+  const closeMobile = useCallback(() => setMobileOpen(false), []);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
+
+  // Close on click outside
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const handleClick = (e: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        closeMobile();
+      }
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [mobileOpen, closeMobile]);
 
   const navLinks = [
     { href: "/", label: t("home") },
@@ -32,11 +57,11 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/60">
+    <nav ref={navRef} className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
+            <div className="w-9 h-9 rounded-lg bg-linear-to-br from-teal-500 to-cyan-600 flex items-center justify-center">
               <span className="text-white font-bold text-sm">EC</span>
             </div>
             <span className="text-lg font-bold text-slate-800">
@@ -118,7 +143,7 @@ export default function Navbar() {
 
             <Link
               href="/quote"
-              className="px-5 py-2.5 bg-gradient-to-r from-teal-500 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:from-teal-600 hover:to-cyan-700 transition-all shadow-sm"
+              className="px-5 py-2.5 bg-linear-to-r from-teal-500 to-cyan-600 text-white text-sm font-semibold rounded-lg hover:from-teal-600 hover:to-cyan-700 transition-all shadow-sm"
             >
               {t("quote")}
             </Link>
@@ -135,11 +160,19 @@ export default function Navbar() {
 
       <AnimatePresence>
         {mobileOpen && (
+          <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="lg:hidden fixed inset-0 top-16 bg-black/40 z-40"
+            onClick={closeMobile}
+          />
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-slate-200 overflow-hidden"
+            className="lg:hidden bg-white border-t border-slate-200 overflow-hidden relative z-50"
           >
             <div className="px-4 py-4 space-y-1">
               {navLinks.map((link) => (
@@ -181,7 +214,7 @@ export default function Navbar() {
                   onClick={() => { switchLocale("es"); setMobileOpen(false); }}
                   className="text-sm font-medium text-slate-600 hover:text-teal-600"
                 >
-                  Espanol
+                  Español
                 </button>
                 <span className="text-slate-300">|</span>
                 <button
@@ -196,13 +229,14 @@ export default function Navbar() {
                 <Link
                   href="/quote"
                   onClick={() => setMobileOpen(false)}
-                  className="block text-center px-5 py-3 bg-gradient-to-r from-teal-500 to-cyan-600 text-white text-sm font-semibold rounded-lg"
+                  className="block text-center px-5 py-3 bg-linear-to-r from-teal-500 to-cyan-600 text-white text-sm font-semibold rounded-lg"
                 >
                   {t("quote")}
                 </Link>
               </div>
             </div>
           </motion.div>
+          </>
         )}
       </AnimatePresence>
     </nav>

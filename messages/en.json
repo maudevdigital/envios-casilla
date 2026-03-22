@@ -32,7 +32,7 @@
     "china": {
       "title": "China Imports",
       "description": "Specialized service for businesses that need to import products from China to Chile and Paraguay with customs management included.",
-      "features": ["Full customs management", "Cargo consolidation", "Sea and air transport", "Import consulting"]
+      "features": ["Full customs management", "Cargo consolidation", "Direct air freight", "Import consulting"]
     },
     "personal": {
       "title": "Personal Shopping",
@@ -213,38 +213,113 @@
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Answers to the most common questions about our services",
+    "categories": {
+      "usa": "USA Shipping",
+      "china": "China Imports",
+      "personal": "Personal Shopping",
+      "customs": "Customs & Taxes",
+      "general": "General"
+    },
     "items": {
       "q1": {
         "question": "How does the Miami mailbox work?",
-        "answer": "We assign you an address at our Miami warehouse. You can use this address to receive your purchases from any store in the United States. Once they arrive, we consolidate and ship them to Chile or Paraguay."
+        "answer": "We assign you an address at our Miami warehouse. You can use this address to receive your purchases from any store in the United States. Once they arrive, we consolidate and ship them to Chile or Paraguay.",
+        "category": "usa"
       },
       "q2": {
         "question": "How long does shipping from USA take?",
-        "answer": "Air shipments from Miami to Chile or Paraguay take between 5 to 10 business days, depending on volume and selected shipping method. We dispatch weekly."
+        "answer": "Air shipments from Miami to Chile or Paraguay take between 5 to 10 business days, depending on volume and selected shipping method. We dispatch weekly.",
+        "category": "usa"
       },
       "q3": {
-        "question": "Can I track my package?",
-        "answer": "Yes, we provide real-time tracking from the moment your package arrives at our warehouse until delivery at your address. You will receive updates via WhatsApp or email."
+        "question": "Can I consolidate multiple packages into one shipment?",
+        "answer": "Yes, we group all your packages that arrive at our Miami warehouse into a single shipment to reduce transportation costs. You can accumulate purchases from different stores and ship everything together.",
+        "category": "usa"
       },
       "q4": {
-        "question": "What products are prohibited?",
-        "answer": "Hazardous materials, weapons, illegal substances, and perishable products cannot be shipped. For the complete list, contact us directly or check the customs regulations of your destination country."
+        "question": "What happens if my package arrives damaged at the Miami warehouse?",
+        "answer": "Upon receiving each package, we take photos and notify you of its condition. If we detect any damage, we inform you immediately to coordinate a return or claim with the store before international shipping.",
+        "category": "usa"
       },
       "q5": {
         "question": "How do imports from China work?",
-        "answer": "We manage the entire process: from coordinating with the Chinese supplier, cargo consolidation, sea or air transport, customs procedures, and final delivery in Chile or Paraguay."
+        "answer": "We manage the entire process: supplier sourcing and verification, price negotiation, factory quality control, cargo consolidation, air freight, customs procedures, and final delivery in Chile or Paraguay. For sea shipping, we offer personalized quotes.",
+        "category": "china"
       },
       "q6": {
-        "question": "What does the personal shopping service include?",
-        "answer": "We search for the product you need, verify the seller, make the purchase on your behalf, inspect quality, and ship it directly to your address. You just choose and we do the rest."
+        "question": "What is the minimum volume to import from China?",
+        "answer": "We do not require a strict minimum, but we recommend volumes that justify international freight costs. For smaller orders, our personal shopping service may be more convenient. We advise you on the best option.",
+        "category": "china"
       },
       "q7": {
-        "question": "How are shipping costs calculated?",
-        "answer": "Costs are calculated based on the weight and dimensions of the package. We consolidate your purchases to reduce volume and optimize pricing. Request a quote for an exact price."
+        "question": "How long does an import from China take?",
+        "answer": "Air freight takes 10 to 15 business days. For sea shipping (35 to 50 business days), you can request a personalized quote. Production time (if applicable) and customs clearance are additional. We provide a detailed timeline for each operation.",
+        "category": "china"
       },
       "q8": {
+        "question": "How do you verify the quality of Chinese suppliers?",
+        "answer": "We conduct prior supplier audits, request product samples, and coordinate factory inspections before shipment. This ensures the product meets your specifications and quality standards.",
+        "category": "china"
+      },
+      "q9": {
+        "question": "What does the personal shopping service include?",
+        "answer": "We search for the product you need in USA or China stores, verify the seller, make the purchase on your behalf, inspect quality, and ship it directly to your address in Chile or Paraguay. You just choose and we do the rest.",
+        "category": "personal"
+      },
+      "q10": {
+        "question": "Do I need an international credit card to use the service?",
+        "answer": "No. We make the purchase for you, so you do not need an international card. We send you the total quote including product, shipping, customs, and taxes, and you pay in local currency.",
+        "category": "personal"
+      },
+      "q11": {
+        "question": "What stores can you buy from on my behalf?",
+        "answer": "We buy from any online or physical store in the United States and China, including Amazon, eBay, Walmart, Best Buy, Alibaba, and more. If the store does not ship to your country or requires a local card, we handle it.",
+        "category": "personal"
+      },
+      "q12": {
+        "question": "What taxes do I pay when receiving my package in Chile?",
+        "answer": "In Chile, international purchases are subject to a 6% customs duty on the CIF value (cost + insurance + freight) and 19% VAT on the CIF value plus the duty. Purchases under USD 41 may be exempt under current regulations from the National Customs Service (Servicio Nacional de Aduanas).",
+        "category": "customs"
+      },
+      "q13": {
+        "question": "What taxes do I pay when receiving my package in Paraguay?",
+        "answer": "In Paraguay, imports are subject to a 6% customs duty on the CIF value and 10% VAT. According to regulations from the National Customs Directorate (DNA), simplified regimes exist for lower-value shipments. We advise you on the best option.",
+        "category": "customs"
+      },
+      "q14": {
         "question": "Do you handle customs procedures?",
-        "answer": "Yes, we take care of all documentation and customs management needed for your products to enter Chile or Paraguay without issues."
+        "answer": "Yes, we take care of all documentation and customs management. This includes commercial invoices, packing lists, certificates of origin when applicable, and coordination with customs agents in Chile and Paraguay so your products enter without issues.",
+        "category": "customs"
+      },
+      "q15": {
+        "question": "What products are prohibited or restricted for import?",
+        "answer": "Hazardous materials, weapons, illegal substances, and perishable products cannot be shipped. Some products like food, cosmetics, medications, and electronics may require special permits from agencies such as ISP, SAG or SEREMI in Chile, or INAN and SENACSA in Paraguay. We advise you on specific requirements.",
+        "category": "customs"
+      },
+      "q16": {
+        "question": "Is there a maximum purchase amount without paying taxes?",
+        "answer": "In Chile, purchases under USD 41 may enter duty-free under the low-value shipment regime, per National Customs Service regulations. In Paraguay, the DNA simplified regime allows lower-value imports with reduced procedures. Amounts and conditions may vary, so we recommend contacting us.",
+        "category": "customs"
+      },
+      "q17": {
+        "question": "Can I track my package?",
+        "answer": "Yes, we provide real-time tracking from the moment your package arrives at our warehouse until delivery at your address. You will receive updates via WhatsApp or email at every stage of the process.",
+        "category": "general"
+      },
+      "q18": {
+        "question": "How are shipping costs calculated?",
+        "answer": "Costs are calculated based on actual or volumetric weight (whichever is greater). Volumetric weight is calculated as (height x width x length in cm) / 5000. We consolidate your purchases to reduce volume and optimize pricing. Use our online calculator for an estimate.",
+        "category": "general"
+      },
+      "q19": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept bank transfers in Chile and Paraguay, and coordinate payment directly via WhatsApp. For imports from China, we work with flexible payment schemes based on the operation volume.",
+        "category": "general"
+      },
+      "q20": {
+        "question": "Do you offer insurance for shipments?",
+        "answer": "Yes, all our shipments include basic coverage. For high-value products, we offer additional insurance that covers the declared product value. Contact us for more details on available coverage options.",
+        "category": "general"
       }
     }
   },
@@ -255,7 +330,10 @@
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms and Conditions",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "paymentMethods": "Payment Methods",
+    "localPartners": "Local Partners",
+    "internationalPartners": "International Partners"
   },
   "usaPage": {
     "title": "Shipping from the United States",
@@ -320,7 +398,7 @@
       },
       "logistics": {
         "title": "International Logistics",
-        "description": "We manage sea or air transport according to your time and budget needs."
+        "description": "We manage air freight for your cargo. For sea shipping, request a personalized quote."
       },
       "customs": {
         "title": "Customs Clearance",
@@ -332,22 +410,21 @@
       }
     },
     "comparison": {
-      "title": "Air vs Sea Freight",
-      "subtitle": "Choose the shipping mode that best fits your timeline and budget",
+      "title": "Shipping Methods",
+      "subtitle": "All our shipments are via air freight. For sea shipping, request a personalized quote",
       "time": "Transit time",
       "cost": "Cost",
       "ideal": "Ideal for",
       "air": {
         "title": "Air Freight",
         "time": "10 to 15 business days",
-        "cost": "Higher cost per kg, lower volume",
-        "ideal": "Urgent orders, samples, high-value products"
+        "cost": "Per kg rate with full tracking",
+        "ideal": "All order types: samples, high-value products, inventory"
       },
-      "sea": {
-        "title": "Sea Freight",
-        "time": "35 to 50 business days",
-        "cost": "Lower cost per kg, large volumes",
-        "ideal": "Large orders, heavy products, inventory restocking"
+      "maritime": {
+        "title": "Need sea shipping?",
+        "description": "For large loads or volumes requiring sea transport, we offer personalized quotes based on your product, quantity, and destination.",
+        "cta": "Request maritime quote"
       }
     },
     "process": {
@@ -367,7 +444,7 @@
       },
       "p4": {
         "title": "International Shipping",
-        "description": "We coordinate air or sea transport with the best carriers and shipping lines."
+        "description": "We coordinate air freight with the best airlines. For sea shipping, we offer personalized quotes."
       },
       "p5": {
         "title": "Customs Clearance",
@@ -407,9 +484,7 @@
     "title": "Get Your Quote",
     "subtitle": "Calculate the estimated cost of your shipment in real time with live exchange rates",
     "destination": "Destination country",
-    "shippingMode": "Shipping mode",
-    "air": "Air freight",
-    "sea": "Sea freight",
+    "air": "Air",
     "productValue": "Product value",
     "shippingToMiami": "Shipping cost to Miami (optional)",
     "shippingToMiamiHint": "Domestic shipping cost within USA to our Miami warehouse. If unknown, you can leave it at 0.",
@@ -423,13 +498,126 @@
     "chargeableWeight": "Chargeable weight",
     "resultChile": "Total delivered to Chile",
     "resultParaguay": "Total delivered to Paraguay",
-    "transport": "Transport",
+    "breakdown": "Cost breakdown",
+    "merchandise": "Merchandise",
+    "domesticShipping": "Domestic shipping to Miami",
+    "transport": "International freight",
+    "customsDuty": "Customs duty",
+    "ivaLabel": "VAT",
     "customsTaxes": "Customs and taxes",
-    "estimatedTotal": "Estimated total",
+    "estimatedTotal": "Total delivered to destination",
     "exchangeRate": "Exchange rate",
     "disclaimer": "Values are approximate and may vary based on actual package dimensions. The chargeable weight is always the greater between actual weight and volumetric weight. For a final quote, contact us via WhatsApp.",
     "requestFinal": "Request final quote",
     "whatsappQuote": "Hello, I just used the calculator. My estimated shipment is USD {total}, chargeable weight {weight} kg, {mode} mode. I would like to confirm the final price."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "How we protect and handle your personal data",
+    "lastUpdate": "Last updated: March 22, 2026",
+    "intro": "At EnviosCasilla, we are committed to protecting our users' privacy. This policy describes how we collect, use, and protect your personal information, in compliance with Chile's Law No. 19,628 on the Protection of Private Life, Paraguay's Law No. 1,682/2001, and other applicable regulations.",
+    "sections": {
+      "s1": {
+        "title": "1. Data we collect",
+        "content": "We collect information that you directly provide when using our services:\n\n• **Identification data:** full name, email address, phone number.\n• **Shipping data:** delivery address, destination country, declared package contents.\n• **Contact data:** messages sent via WhatsApp, contact form, or email.\n• **Browsing data:** cookies, IP address, browser type, and pages visited (anonymously and in aggregate).\n\nWe do not collect financial data such as credit card numbers."
+      },
+      "s2": {
+        "title": "2. Use of information",
+        "content": "We use your personal data exclusively to:\n\n• Manage and process your international shipments.\n• Handle customs procedures on your behalf with Chile's National Customs Service or Paraguay's National Customs Directorate.\n• Communicate with you about the status of your shipments.\n• Respond to your inquiries and quote requests.\n• Improve our services and user experience.\n• Comply with legal and regulatory obligations."
+      },
+      "s3": {
+        "title": "3. Legal basis for processing",
+        "content": "The processing of your data is based on:\n\n• **Your consent** when providing your data and accepting this policy.\n• **Contractual performance** of the shipping services you request.\n• **Compliance with legal obligations**, such as customs and tax regulations in Chile (Customs Ordinance, DFL No. 30) and Paraguay (Customs Code, Law No. 2,422/2004).\n• **Legitimate interest** in improving our services and preventing fraud."
+      },
+      "s4": {
+        "title": "4. Data sharing with third parties",
+        "content": "We share your data only when necessary to provide the service:\n\n• **Customs authorities:** Chile's National Customs Service or Paraguay's National Customs Directorate, as applicable, for package clearance.\n• **Transport companies:** airlines and shipping lines for international cargo transport.\n• **Customs agents:** authorized brokers who manage goods entry.\n\nWe do not sell, rent, or share your data with third parties for advertising purposes."
+      },
+      "s5": {
+        "title": "5. Your rights",
+        "content": "Under current legislation, you have the right to:\n\n• **Access:** request information about the personal data we hold about you.\n• **Rectification:** correct inaccurate or outdated data.\n• **Deletion:** request the removal of your data when it is no longer needed.\n• **Objection:** object to the processing of your data in certain circumstances.\n\nTo exercise these rights, contact us at contacto@envios-casilla.com. We will respond within a maximum of 15 business days."
+      },
+      "s6": {
+        "title": "6. Data security",
+        "content": "We implement technical and organizational measures to protect your personal data against unauthorized access, loss, or alteration. This includes encrypted communications, restricted access to information, and security protocols in our systems."
+      },
+      "s7": {
+        "title": "7. Cookies",
+        "content": "Our website uses technical cookies necessary for its operation. We do not use advertising tracking cookies. Analytics cookies are processed anonymously and in aggregate to improve the user experience."
+      },
+      "s8": {
+        "title": "8. Data retention",
+        "content": "We retain your personal data for as long as necessary to fulfill the purposes for which it was collected and to comply with legal obligations. Shipping records and customs documentation are retained for the legally required period by the competent authorities (5 years under customs regulations)."
+      },
+      "s9": {
+        "title": "9. Changes to this policy",
+        "content": "We reserve the right to update this privacy policy. Any significant changes will be notified through our website or by email. We recommend reviewing this page periodically."
+      },
+      "s10": {
+        "title": "10. Contact",
+        "content": "If you have questions about this privacy policy or wish to exercise your rights, contact us:\n\n• **Email:** contacto@envios-casilla.com\n• **WhatsApp Chile:** +56 9 2842 3774\n• **WhatsApp Paraguay:** +595 992 110 955"
+      }
+    }
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "subtitle": "General conditions for using our services",
+    "lastUpdate": "Last updated: March 22, 2026",
+    "intro": "These Terms and Conditions govern the relationship between EnviosCasilla (hereinafter, \"the Company\") and users of our international shipping, import, and personal shopping services. By using our services, you accept these terms in their entirety.",
+    "sections": {
+      "s1": {
+        "title": "1. Description of services",
+        "content": "EnviosCasilla offers the following services:\n\n• **USA Shipping:** mailbox in Miami, FL, for receiving, consolidating, and shipping packages to Chile and Paraguay.\n• **China Imports:** comprehensive import management including supplier sourcing, quality control, transport, and customs clearance.\n• **Personal Shopping:** purchasing service on behalf of the client at stores in the United States and China.\n\nServices are available to individuals and businesses residing in Chile and Paraguay."
+      },
+      "s2": {
+        "title": "2. Registration and mailbox use",
+        "content": "When requesting a Miami mailbox, the user:\n\n• Must provide truthful and up-to-date information.\n• Receives an exclusive address at our warehouse to receive packages.\n• Commits to truthfully declaring the content and value of shipments.\n• Accepts that the mailbox is for personal and non-transferable use."
+      },
+      "s3": {
+        "title": "3. Prohibited and restricted products",
+        "content": "It is strictly prohibited to ship:\n\n• Hazardous, flammable, or explosive materials.\n• Firearms and ammunition.\n• Controlled or illegal substances.\n• Perishable products without special authorization.\n• Counterfeit merchandise or items infringing intellectual property.\n• Any product whose import is prohibited by Chilean law (Customs Ordinance) or Paraguayan law (Law No. 2,422/2004, Customs Code).\n\nThe user is responsible for the content of their packages. EnviosCasilla reserves the right to reject or return shipments that violate these restrictions."
+      },
+      "s4": {
+        "title": "4. Rates and payment methods",
+        "content": "• Rates are calculated based on actual or volumetric weight (whichever is greater).\n• Prices are in US dollars (USD), with conversion to local currency (CLP or PYG) at the current exchange rate.\n• Customs costs, taxes, and duties are the recipient's responsibility and are calculated according to each country's current regulations.\n• Payment must be made before shipment dispatch.\n• We accept bank transfers in Chile and Paraguay."
+      },
+      "s5": {
+        "title": "5. Delivery timeframes",
+        "content": "• **Air shipments from USA:** 5 to 10 business days.\n• **Air freight from China:** 10 to 15 business days.\n• **Sea freight (by personalized quote):** 35 to 50 business days.\n\nAll standard shipments are via air freight. Sea shipping is available by personalized quote.\n\nThese timeframes are estimates and may vary due to causes beyond our control, such as customs delays, weather conditions, or logistical issues. EnviosCasilla shall not be liable for delays caused by force majeure."
+      },
+      "s6": {
+        "title": "6. Liability and limitations",
+        "content": "• EnviosCasilla acts as a logistics intermediary and is not responsible for defects in products purchased by the client.\n• Our liability is limited to the declared shipment value.\n• We are not responsible for incorrect information provided by the user (address, declared content, value).\n• In case of loss or damage during transport, maximum compensation shall be the declared package value, subject to the insurance conditions contracted.\n• The Company shall not be liable for confiscations or seizures by customs authorities due to package content."
+      },
+      "s7": {
+        "title": "7. Customs procedures and taxes",
+        "content": "• EnviosCasilla handles customs procedures on behalf of the client.\n• **Chile:** shipments are subject to a 6% duty on CIF value and 19% VAT, per the Customs Ordinance and National Customs Service regulations. Purchases under USD 41 may be exempt.\n• **Paraguay:** shipments are subject to a 6% duty on CIF value and 10% VAT, per the Customs Code (Law No. 2,422/2004) and National Customs Directorate regulations.\n• The user is responsible for payment of all applicable taxes and duties.\n• Tax amounts calculated by our platform are estimates and may vary."
+      },
+      "s8": {
+        "title": "8. Warehouse storage",
+        "content": "• Packages received at our Miami warehouse are stored free of charge for a period of 30 days.\n• After this period, a storage fee will apply.\n• Unclaimed packages after 90 days may be returned or disposed of, with prior notification to the user."
+      },
+      "s9": {
+        "title": "9. Personal shopping",
+        "content": "• The personal shopping service requires prior approval of the quote by the client.\n• Once a purchase is made, cancellations or returns are not accepted, unless the product received does not match what was requested.\n• Returns to the original store are managed according to each seller's policies, and associated costs are the client's responsibility.\n• EnviosCasilla does not guarantee product availability or specific prices."
+      },
+      "s10": {
+        "title": "10. Consumer protection",
+        "content": "These terms are governed by:\n\n• **Chile:** Law No. 19,496 on Consumer Rights Protection and its amendments.\n• **Paraguay:** Law No. 1,334/1998 on Consumer and User Defense.\n\nUsers may exercise their rights before SERNAC in Chile or SEDECO in Paraguay."
+      },
+      "s11": {
+        "title": "11. Dispute resolution",
+        "content": "The parties commit to resolving any dispute in good faith. If no agreement is reached:\n\n• For users in Chile, disputes shall be submitted to the jurisdiction of the ordinary courts of Santiago.\n• For users in Paraguay, disputes shall be submitted to the jurisdiction of the ordinary courts of Asuncion.\n\nUsers may also resort to mediation mechanisms available at SERNAC (Chile) or SEDECO (Paraguay)."
+      },
+      "s12": {
+        "title": "12. Modifications",
+        "content": "EnviosCasilla reserves the right to modify these terms and conditions at any time. Changes will be published on this page and, in case of substantial modifications, will be notified by email. Continued use of our services implies acceptance of the updated terms."
+      },
+      "s13": {
+        "title": "13. Contact",
+        "content": "For inquiries about these terms and conditions:\n\n• **Email:** contacto@envios-casilla.com\n• **WhatsApp Chile:** +56 9 2842 3774\n• **WhatsApp Paraguay:** +595 992 110 955"
+      }
+    }
   },
   "personalPage": {
     "title": "Personal Shopping",

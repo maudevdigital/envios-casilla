@@ -50,7 +50,7 @@ export default function ServicesPage() {
   return (
     <>
       <section className="relative py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900" />
+        <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-slate-800 to-teal-900" />
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-72 h-72 bg-teal-500/10 rounded-full blur-3xl" />
         </div>
